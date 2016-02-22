@@ -11,6 +11,7 @@
 #import <Mantle.h>
 
 #import "KeyValueSheet.h"
+#import "Notifications.h"
 #import "Marcos.h"
 
 typedef void(^FDRequestCallback)(NSDictionary *responseDic, NSError *error);

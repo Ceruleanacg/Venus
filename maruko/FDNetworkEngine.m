@@ -140,6 +140,12 @@ static FDNetworkEngine *_engine;
     
     NSLog(@"API: '%@' error with status code %ld , domain : '%@'", api, (long)localError.code, localError.domain);
     
+    if (statusCode == 401) {
+        [self setToken:nil];
+        [self dismissModalController];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNeedLoginNotification object:self];
+    }
+    
     if (callback) {
         callback(nil, localError);
     }
@@ -209,6 +215,16 @@ static FDNetworkEngine *_engine;
     return [[AFNetworkReachabilityManager sharedManager] isReachable];
 }
 
+- (void)dismissModalController {
+    
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    
+    UIViewController *presentedController = [window.rootViewController presentedViewController];
+    
+    if (presentedController && [presentedController isKindOfClass:[UINavigationController class]]) {
+        [presentedController dismissViewControllerAnimated:YES completion:nil];
+    }
+}
 
 
 @end

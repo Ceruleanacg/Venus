@@ -54,6 +54,7 @@
 		EFFC29BA1C7AEC7E004D590C /* FDWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWebService.h; sourceTree = "<group>"; };
 		EFFC29BB1C7AEC7E004D590C /* FDWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWebService.m; sourceTree = "<group>"; };
 		EFFC29BD1C7AEE17004D590C /* KeyValueSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueSheet.h; sourceTree = "<group>"; };
+		EFFC29BE1C7AF3B0004D590C /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +207,7 @@
 				EFFC29B81C7AE8FF004D590C /* Marcos.h */,
 				EFFC29A61C7A0717004D590C /* ColorSheet.h */,
 				EFFC29B91C7AE923004D590C /* LayoutSheet.h */,
+				EFFC29BE1C7AF3B0004D590C /* Notifications.h */,
 				EFFC29BD1C7AEE17004D590C /* KeyValueSheet.h */,
 				EFFC29821C79FEC1004D590C /* AppDelegate.h */,
 				EFFC29831C79FEC1004D590C /* AppDelegate.m */,
