@@ -7,7 +7,6 @@
 //
 
 #import "FDNetworkEngine.h"
-#import "Marcos.h"
 
 static FDNetworkEngine *_engine;
 
@@ -25,6 +24,8 @@ static FDNetworkEngine *_engine;
     AFJSONRequestSerializer *_jsonRequestSerializer;
     
 }
+
+@synthesize token = _token;
 
 + (instancetype)sharedEngine {
     
@@ -75,6 +76,10 @@ static FDNetworkEngine *_engine;
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
+    NSMutableDictionary *innerParms = [parms mutableCopy];
+    
+    innerParms[@"token"] = self.token;
+    
     NSString *urlString = [[_baseURL URLByAppendingPathComponent:api] absoluteString];
     
     WeakSelf;
@@ -96,13 +101,13 @@ static FDNetworkEngine *_engine;
     
     if ([method isEqualToString:@"GET"]) {
         [manager setRequestSerializer:_httpRequestSerializer];
-        [manager GET:urlString parameters:[parms copy] success:successBlock failure:failureBlock];
+        [manager GET:urlString parameters:[innerParms copy] success:successBlock failure:failureBlock];
     } else if ([method isEqualToString:@"POST"]) {
         [manager setRequestSerializer:_jsonRequestSerializer];
-        [manager POST:urlString parameters:[parms copy] success:successBlock failure:failureBlock];
+        [manager POST:urlString parameters:[innerParms copy] success:successBlock failure:failureBlock];
     } else if ([method isEqualToString:@"DELETE"]) {
         [manager setRequestSerializer:_jsonRequestSerializer];
-        [manager DELETE:urlString parameters:[parms copy] success:successBlock failure:failureBlock];
+        [manager DELETE:urlString parameters:[innerParms copy] success:successBlock failure:failureBlock];
     } else {
         NSAssert(NO, @"Unknown method for api currently!");
     }
@@ -123,7 +128,7 @@ static FDNetworkEngine *_engine;
     }
     
     if (callback) {
-        callback(responseDic, error);
+        callback(error ? nil : responseDic, error);
     }
 }
 
@@ -140,11 +145,70 @@ static FDNetworkEngine *_engine;
     }
 }
 
+- (void)fetchModelWithAPI:(NSString *)apiName Parms:(NSDictionary *)parms Callback:(FDFetchRequestCallback)callback {
+    
+    WeakSelf;
+    
+    [[FDNetworkEngine sharedEngine] addSessionTaskWithAPI:apiName Method:@"GET" Parms:parms Callback:^(NSDictionary *reseponseDic, NSError *error) {
+        
+        StrongSelf;
+        
+        if (s_self) {
+            
+            NSMutableArray *objects = [NSMutableArray array];
+            
+            if (!error) {
+                Class modelClass = NSClassFromString(s_self->_modelMap[apiName]);
+                
+                if (!modelClass) {
+                    NSAssert(NO, @"No class match api:%@", apiName);
+                }
+                
+                NSArray *results = reseponseDic[kResultsKey];
+                
+                NSError *modelError = nil;
+                
+                if ([results isKindOfClass:[NSNull class]]) {
+                    results = [NSArray new];
+                }
+                
+                objects = [[MTLJSONAdapter modelsOfClass:modelClass fromJSONArray:results error:&modelError] mutableCopy];
+                
+                DLogError(modelError)
+                
+                if (modelError) {
+                    error = modelError;
+                }
+            }
+            if (callback) {
+                callback(error ? nil : objects, error);
+            }
+        }
+    }];
+}
+
+
+#pragma mark - Token Setter & Getter
+
+- (NSString *)token {
+    if (!_token) {
+        _token = [[NSUserDefaults standardUserDefaults] objectForKey:kTokenKey];
+    }
+    return _token;
+}
+
+- (void)setToken:(NSString *)token {
+    _token = token;
+    [[NSUserDefaults standardUserDefaults] setObject:_token forKey:kTokenKey];
+}
+
 
 #pragma mark - Helper Method
 
 - (BOOL)networkReachable {
     return [[AFNetworkReachabilityManager sharedManager] isReachable];
 }
+
+
 
 @end

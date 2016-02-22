@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
+#import <Mantle.h>
+
+#import "KeyValueSheet.h"
+#import "Marcos.h"
 
 typedef void(^FDRequestCallback)(NSDictionary *responseDic, NSError *error);
+typedef void(^FDFetchRequestCallback)(NSArray *objects, NSError *error);
 
 typedef enum : NSUInteger {
     FDStatusError = -1,
@@ -18,7 +23,11 @@ typedef enum : NSUInteger {
 
 @interface FDNetworkEngine : NSObject
 
+@property (nonatomic, strong) NSString *token;
+
 + (instancetype)sharedEngine;
+
+- (void)fetchModelWithAPI:(NSString *)apiName Parms:(NSDictionary *)parms Callback:(FDFetchRequestCallback)callback;
 
 - (void)addSessionTaskWithAPI:(NSString *)api Method:(NSString *)method Parms:(NSDictionary *)parms Callback:(FDRequestCallback)callback;
 
