@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFFC29811C79FEC1004D590C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29801C79FEC1004D590C /* main.m */; };
+		EFFC29841C79FEC1004D590C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29831C79FEC1004D590C /* AppDelegate.m */; };
+		EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC29881C79FEC1004D590C /* Main.storyboard */; };
+		EFFC298C1C79FEC1004D590C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFC298B1C79FEC1004D590C /* Assets.xcassets */; };
+		EFFC298F1C79FEC1004D590C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC298D1C79FEC1004D590C /* LaunchScreen.storyboard */; };
+		EFFC29A11C7A0482004D590C /* FDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29A01C7A0482004D590C /* FDBaseViewController.m */; };
+		EFFC29A41C7A0540004D590C /* FDBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29A31C7A0540004D590C /* FDBarButtonItem.m */; };
+		EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29A81C7A0888004D590C /* FDNavigationController.m */; };
+		EFFC29AC1C7A08CD004D590C /* FDBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29AB1C7A08CD004D590C /* FDBaseViewModel.m */; };
+		EFFC29AF1C7A08F2004D590C /* FDBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29AE1C7A08F2004D590C /* FDBaseCell.m */; };
+		EFFC29B31C7ADD37004D590C /* FDNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29B21C7ADD37004D590C /* FDNetworkEngine.m */; };
+		EFFC29B61C7AE39B004D590C /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFFC29B51C7AE39B004D590C /* api.plist */; };
+		F211A4770B8A231EE61FBDE4 /* libPods-maruko.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14442592AB4D2EA4140032 /* libPods-maruko.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B14442592AB4D2EA4140032 /* libPods-maruko.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maruko.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0F877780EC1E182FBB67DE /* Pods-maruko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maruko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maruko/Pods-maruko.debug.xcconfig"; sourceTree = "<group>"; };
+		AC95B59801ECEDC0D4903A61 /* Pods-maruko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maruko.release.xcconfig"; path = "Pods/Target Support Files/Pods-maruko/Pods-maruko.release.xcconfig"; sourceTree = "<group>"; };
+		EFFC297C1C79FEC1004D590C /* maruko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maruko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFC29801C79FEC1004D590C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFFC29821C79FEC1004D590C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFFC29831C79FEC1004D590C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFFC29891C79FEC1004D590C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFFC298B1C79FEC1004D590C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFFC298E1C79FEC1004D590C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFFC29901C79FEC1004D590C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFC299F1C7A0482004D590C /* FDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseViewController.h; sourceTree = "<group>"; };
+		EFFC29A01C7A0482004D590C /* FDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseViewController.m; sourceTree = "<group>"; };
+		EFFC29A21C7A0540004D590C /* FDBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBarButtonItem.h; sourceTree = "<group>"; };
+		EFFC29A31C7A0540004D590C /* FDBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBarButtonItem.m; sourceTree = "<group>"; };
+		EFFC29A61C7A0717004D590C /* ColorSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSheet.h; sourceTree = "<group>"; };
+		EFFC29A71C7A0888004D590C /* FDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNavigationController.h; sourceTree = "<group>"; };
+		EFFC29A81C7A0888004D590C /* FDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNavigationController.m; sourceTree = "<group>"; };
+		EFFC29AA1C7A08CD004D590C /* FDBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseViewModel.h; sourceTree = "<group>"; };
+		EFFC29AB1C7A08CD004D590C /* FDBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseViewModel.m; sourceTree = "<group>"; };
+		EFFC29AD1C7A08F2004D590C /* FDBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseCell.h; sourceTree = "<group>"; };
+		EFFC29AE1C7A08F2004D590C /* FDBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseCell.m; sourceTree = "<group>"; };
+		EFFC29B11C7ADD37004D590C /* FDNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNetworkEngine.h; sourceTree = "<group>"; };
+		EFFC29B21C7ADD37004D590C /* FDNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNetworkEngine.m; sourceTree = "<group>"; };
+		EFFC29B51C7AE39B004D590C /* api.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = api.plist; sourceTree = "<group>"; };
+		EFFC29B81C7AE8FF004D590C /* Marcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marcos.h; sourceTree = "<group>"; };
+		EFFC29B91C7AE923004D590C /* LayoutSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutSheet.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFFC29791C79FEC1004D590C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F211A4770B8A231EE61FBDE4 /* libPods-maruko.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C61276D69308D305873138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F0F877780EC1E182FBB67DE /* Pods-maruko.debug.xcconfig */,
+				AC95B59801ECEDC0D4903A61 /* Pods-maruko.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8047E6A8AB133BD765A1C09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B14442592AB4D2EA4140032 /* libPods-maruko.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFFC29731C79FEC1004D590C = {
+			isa = PBXGroup;
+			children = (
+				EFFC297E1C79FEC1004D590C /* maruko */,
+				EFFC297D1C79FEC1004D590C /* Products */,
+				61C61276D69308D305873138 /* Pods */,
+				8047E6A8AB133BD765A1C09C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFFC297D1C79FEC1004D590C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC297C1C79FEC1004D590C /* maruko.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFFC297E1C79FEC1004D590C /* maruko */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29971C7A0346004D590C /* Class */,
+				EFFC29961C7A033E004D590C /* Resource */,
+				EFFC297F1C79FEC1004D590C /* Supporting Files */,
+			);
+			path = maruko;
+			sourceTree = "<group>";
+		};
+		EFFC297F1C79FEC1004D590C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29901C79FEC1004D590C /* Info.plist */,
+				EFFC29801C79FEC1004D590C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFFC29961C7A033E004D590C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29981C7A0358004D590C /* Arts */,
+				EFFC298B1C79FEC1004D590C /* Assets.xcassets */,
+				EFFC29881C79FEC1004D590C /* Main.storyboard */,
+				EFFC298D1C79FEC1004D590C /* LaunchScreen.storyboard */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		EFFC29971C7A0346004D590C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29B01C7ADD18004D590C /* WebService */,
+				EFFC29A51C7A068A004D590C /* App */,
+				EFFC29991C7A0368004D590C /* Base */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		EFFC29981C7A0358004D590C /* Arts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Arts;
+			sourceTree = "<group>";
+		};
+		EFFC29991C7A0368004D590C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC299E1C7A03F9004D590C /* View */,
+				EFFC299D1C7A03EA004D590C /* ViewModel */,
+				EFFC299C1C7A03E1004D590C /* Controller */,
+				EFFC299A1C7A037F004D590C /* Model */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		EFFC299A1C7A037F004D590C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EFFC299C1C7A03E1004D590C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC299F1C7A0482004D590C /* FDBaseViewController.h */,
+				EFFC29A01C7A0482004D590C /* FDBaseViewController.m */,
+				EFFC29A71C7A0888004D590C /* FDNavigationController.h */,
+				EFFC29A81C7A0888004D590C /* FDNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EFFC299D1C7A03EA004D590C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29AA1C7A08CD004D590C /* FDBaseViewModel.h */,
+				EFFC29AB1C7A08CD004D590C /* FDBaseViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFFC299E1C7A03F9004D590C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29AD1C7A08F2004D590C /* FDBaseCell.h */,
+				EFFC29AE1C7A08F2004D590C /* FDBaseCell.m */,
+				EFFC29A21C7A0540004D590C /* FDBarButtonItem.h */,
+				EFFC29A31C7A0540004D590C /* FDBarButtonItem.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EFFC29A51C7A068A004D590C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29B51C7AE39B004D590C /* api.plist */,
+				EFFC29B81C7AE8FF004D590C /* Marcos.h */,
+				EFFC29A61C7A0717004D590C /* ColorSheet.h */,
+				EFFC29B91C7AE923004D590C /* LayoutSheet.h */,
+				EFFC29821C79FEC1004D590C /* AppDelegate.h */,
+				EFFC29831C79FEC1004D590C /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		EFFC29B01C7ADD18004D590C /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29B41C7ADD3B004D590C /* Engine */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		EFFC29B41C7ADD3B004D590C /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29B11C7ADD37004D590C /* FDNetworkEngine.h */,
+				EFFC29B21C7ADD37004D590C /* FDNetworkEngine.m */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFFC297B1C79FEC1004D590C /* maruko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFC29931C79FEC1004D590C /* Build configuration list for PBXNativeTarget "maruko" */;
+			buildPhases = (
+				FE29E3B8983D3B9330E6037A /* Check Pods Manifest.lock */,
+				EFFC29781C79FEC1004D590C /* Sources */,
+				EFFC29791C79FEC1004D590C /* Frameworks */,
+				EFFC297A1C79FEC1004D590C /* Resources */,
+				9F5CD3537EB89BD9D2BC421D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = maruko;
+			productName = maruko;
+			productReference = EFFC297C1C79FEC1004D590C /* maruko.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFFC29741C79FEC1004D590C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Shuyu;
+				TargetAttributes = {
+					EFFC297B1C79FEC1004D590C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EFFC29771C79FEC1004D590C /* Build configuration list for PBXProject "maruko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFFC29731C79FEC1004D590C;
+			productRefGroup = EFFC297D1C79FEC1004D590C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFFC297B1C79FEC1004D590C /* maruko */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFC297A1C79FEC1004D590C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFC298F1C79FEC1004D590C /* LaunchScreen.storyboard in Resources */,
+				EFFC29B61C7AE39B004D590C /* api.plist in Resources */,
+				EFFC298C1C79FEC1004D590C /* Assets.xcassets in Resources */,
+				EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F5CD3537EB89BD9D2BC421D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-maruko/Pods-maruko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE29E3B8983D3B9330E6037A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFFC29781C79FEC1004D590C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */,
+				EFFC29AC1C7A08CD004D590C /* FDBaseViewModel.m in Sources */,
+				EFFC29A11C7A0482004D590C /* FDBaseViewController.m in Sources */,
+				EFFC29841C79FEC1004D590C /* AppDelegate.m in Sources */,
+				EFFC29A41C7A0540004D590C /* FDBarButtonItem.m in Sources */,
+				EFFC29AF1C7A08F2004D590C /* FDBaseCell.m in Sources */,
+				EFFC29B31C7ADD37004D590C /* FDNetworkEngine.m in Sources */,
+				EFFC29811C79FEC1004D590C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFFC29881C79FEC1004D590C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFC29891C79FEC1004D590C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFFC298D1C79FEC1004D590C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFC298E1C79FEC1004D590C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFFC29911C79FEC1004D590C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFFC29921C79FEC1004D590C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFFC29941C79FEC1004D590C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0F877780EC1E182FBB67DE /* Pods-maruko.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = maruko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shuyu.maruko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFFC29951C79FEC1004D590C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC95B59801ECEDC0D4903A61 /* Pods-maruko.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = maruko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shuyu.maruko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFFC29771C79FEC1004D590C /* Build configuration list for PBXProject "maruko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFC29911C79FEC1004D590C /* Debug */,
+				EFFC29921C79FEC1004D590C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFC29931C79FEC1004D590C /* Build configuration list for PBXNativeTarget "maruko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFC29941C79FEC1004D590C /* Debug */,
+				EFFC29951C79FEC1004D590C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFFC29741C79FEC1004D590C /* Project object */;
+}
