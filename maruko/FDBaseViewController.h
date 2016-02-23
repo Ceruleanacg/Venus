@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry.h>
+
+#import "FDNavigationController.h"
+#import "FDBaseViewModel.h"
+
+#import "CategorySheet.h"
+#import "LayoutSheet.h"
+#import "ColorSheet.h"
+#import "Marcos.h"
 
 @interface FDBaseViewController : UIViewController
+
+@property (nonatomic, strong) FDBaseViewModel *viewModel;
 
 - (void)goBack;
 

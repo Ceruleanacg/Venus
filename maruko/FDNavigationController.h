@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class FDTabBarController;
+
+@class FDBaseViewModel;
+
 @interface FDNavigationController : UINavigationController
+
+@property (nonatomic, strong) FDTabBarController *fd_tabBarController;
+
+- (void)pushViewController:(Class)viewControllerClass ViewModel:(FDBaseViewModel *)viewModel animated:(BOOL)animated;
 
 @end

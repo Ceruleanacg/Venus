@@ -15,7 +15,5 @@ pod 'MJRefresh'
 
 pod 'Mantle'
 
-pod 'BlocksKit'
-
 end
 

@@ -8,6 +8,30 @@
 
 #import "FDBaseCell.h"
 
+#import "FDBaseViewModel.h"
+#import "FDBaseModel.h"
+
 @implementation FDBaseCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        _line = [UIView new];
+        _line.backgroundColor = ColorCellLine;
+        
+        [self.contentView addSubview:_line];
+        
+        [_line mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(@20);
+            make.bottom.right.equalTo(@0);
+            make.height.equalTo(@0.5);
+        }];
+    }
+    return self;
+}
+
+- (void)bindWithModel:(FDBaseModel *)model {
+    
+}
+
 
 @end
