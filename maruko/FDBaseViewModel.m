@@ -10,7 +10,6 @@
 
 @implementation FDBaseViewModel {
     BOOL _isFetching;
-    NSString *_reuseIdentifer;
 }
 
 - (instancetype)initWithAPI:(NSString *)api {

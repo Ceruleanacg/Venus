@@ -9,6 +9,9 @@
 #ifndef CategorySheet_h
 #define CategorySheet_h
 
+#import "NSAttributedString+Helper.h"
+#import "UITextField+Helper.h"
+#import "UIWindow+Helper.h"
 #import "UILabel+Helper.h"
 #import "UIView+Helper.h"
 

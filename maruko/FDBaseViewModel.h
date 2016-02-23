@@ -20,7 +20,7 @@ typedef enum : NSUInteger {
     FDFetchModeMore,
 } FDFetchMode;
 
-@interface FDBaseViewModel : NSObject <UITableViewDataSource>
+@interface FDBaseViewModel : NSObject <UITableViewDataSource, UICollectionViewDataSource>
 
 @property (nonatomic, copy) NSString *api;
 
@@ -29,6 +29,8 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) FDBaseModel *model;
 
 @property (nonatomic, strong) Class cellClass;
+
+@property (nonatomic, strong) NSString *reuseIdentifer;
 
 @property (nonatomic, strong) NSMutableArray *objects;
 

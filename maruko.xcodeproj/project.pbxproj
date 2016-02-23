@@ -29,6 +29,17 @@
 		EFFC29D81C7C4A56004D590C /* FDRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29D71C7C4A56004D590C /* FDRefreshHeader.m */; };
 		EFFC29DB1C7C4C26004D590C /* FDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29DA1C7C4C26004D590C /* FDBaseModel.m */; };
 		EFFC29DE1C7C4EC8004D590C /* FDBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29DD1C7C4EC8004D590C /* FDBaseCollectionCell.m */; };
+		EFFC29E11C7C503A004D590C /* FDTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29E01C7C503A004D590C /* FDTextFieldCell.m */; };
+		EFFC29E41C7C50A2004D590C /* UITextField+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29E31C7C50A2004D590C /* UITextField+Helper.m */; };
+		EFFC29E71C7C5223004D590C /* NSAttributedString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29E61C7C5223004D590C /* NSAttributedString+Helper.m */; };
+		EFFC29EA1C7C525A004D590C /* UIWindow+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29E91C7C525A004D590C /* UIWindow+Helper.m */; };
+		EFFC29EE1C7C52EE004D590C /* FDValidater.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29ED1C7C52EE004D590C /* FDValidater.m */; };
+		EFFC29F21C7C5319004D590C /* FDCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29F11C7C5319004D590C /* FDCoding.m */; };
+		EFFC29F61C7C534D004D590C /* FDAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29F51C7C534D004D590C /* FDAlert.m */; };
+		EFFC29F91C7C53D2004D590C /* FDBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29F81C7C53D2004D590C /* FDBaseCollectionViewController.m */; };
+		EFFC29FC1C7C557D004D590C /* FDTextLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29FB1C7C557D004D590C /* FDTextLabelCell.m */; };
+		EFFC29FF1C7C5617004D590C /* FDBaseStaticCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29FE1C7C5617004D590C /* FDBaseStaticCellController.m */; };
+		EFFC2A021C7C56F3004D590C /* FDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC2A011C7C56F3004D590C /* FDButton.m */; };
 		F211A4770B8A231EE61FBDE4 /* libPods-maruko.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14442592AB4D2EA4140032 /* libPods-maruko.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +94,28 @@
 		EFFC29DA1C7C4C26004D590C /* FDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseModel.m; sourceTree = "<group>"; };
 		EFFC29DC1C7C4EC8004D590C /* FDBaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseCollectionCell.h; sourceTree = "<group>"; };
 		EFFC29DD1C7C4EC8004D590C /* FDBaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseCollectionCell.m; sourceTree = "<group>"; };
+		EFFC29DF1C7C503A004D590C /* FDTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTextFieldCell.h; sourceTree = "<group>"; };
+		EFFC29E01C7C503A004D590C /* FDTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTextFieldCell.m; sourceTree = "<group>"; };
+		EFFC29E21C7C50A2004D590C /* UITextField+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Helper.h"; sourceTree = "<group>"; };
+		EFFC29E31C7C50A2004D590C /* UITextField+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Helper.m"; sourceTree = "<group>"; };
+		EFFC29E51C7C5223004D590C /* NSAttributedString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Helper.h"; sourceTree = "<group>"; };
+		EFFC29E61C7C5223004D590C /* NSAttributedString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Helper.m"; sourceTree = "<group>"; };
+		EFFC29E81C7C525A004D590C /* UIWindow+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Helper.h"; sourceTree = "<group>"; };
+		EFFC29E91C7C525A004D590C /* UIWindow+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Helper.m"; sourceTree = "<group>"; };
+		EFFC29EC1C7C52EE004D590C /* FDValidater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDValidater.h; sourceTree = "<group>"; };
+		EFFC29ED1C7C52EE004D590C /* FDValidater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDValidater.m; sourceTree = "<group>"; };
+		EFFC29F01C7C5319004D590C /* FDCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoding.h; sourceTree = "<group>"; };
+		EFFC29F11C7C5319004D590C /* FDCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoding.m; sourceTree = "<group>"; };
+		EFFC29F41C7C534D004D590C /* FDAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAlert.h; sourceTree = "<group>"; };
+		EFFC29F51C7C534D004D590C /* FDAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAlert.m; sourceTree = "<group>"; };
+		EFFC29F71C7C53D2004D590C /* FDBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseCollectionViewController.h; sourceTree = "<group>"; };
+		EFFC29F81C7C53D2004D590C /* FDBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseCollectionViewController.m; sourceTree = "<group>"; };
+		EFFC29FA1C7C557D004D590C /* FDTextLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTextLabelCell.h; sourceTree = "<group>"; };
+		EFFC29FB1C7C557D004D590C /* FDTextLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTextLabelCell.m; sourceTree = "<group>"; };
+		EFFC29FD1C7C5617004D590C /* FDBaseStaticCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBaseStaticCellController.h; sourceTree = "<group>"; };
+		EFFC29FE1C7C5617004D590C /* FDBaseStaticCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBaseStaticCellController.m; sourceTree = "<group>"; };
+		EFFC2A001C7C56F3004D590C /* FDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDButton.h; sourceTree = "<group>"; };
+		EFFC2A011C7C56F3004D590C /* FDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +244,10 @@
 				EFFC29A81C7A0888004D590C /* FDNavigationController.m */,
 				EFFC29D31C7C4967004D590C /* FDBaseTableViewController.h */,
 				EFFC29D41C7C4967004D590C /* FDBaseTableViewController.m */,
+				EFFC29FD1C7C5617004D590C /* FDBaseStaticCellController.h */,
+				EFFC29FE1C7C5617004D590C /* FDBaseStaticCellController.m */,
+				EFFC29F71C7C53D2004D590C /* FDBaseCollectionViewController.h */,
+				EFFC29F81C7C53D2004D590C /* FDBaseCollectionViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -227,10 +264,16 @@
 		EFFC299E1C7A03F9004D590C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EFFC2A001C7C56F3004D590C /* FDButton.h */,
+				EFFC2A011C7C56F3004D590C /* FDButton.m */,
 				EFFC29AD1C7A08F2004D590C /* FDBaseCell.h */,
 				EFFC29AE1C7A08F2004D590C /* FDBaseCell.m */,
 				EFFC29C71C7B069C004D590C /* FDTabButton.h */,
 				EFFC29C81C7B069C004D590C /* FDTabButton.m */,
+				EFFC29DF1C7C503A004D590C /* FDTextFieldCell.h */,
+				EFFC29E01C7C503A004D590C /* FDTextFieldCell.m */,
+				EFFC29FA1C7C557D004D590C /* FDTextLabelCell.h */,
+				EFFC29FB1C7C557D004D590C /* FDTextLabelCell.m */,
 				EFFC29A21C7A0540004D590C /* FDBarButtonItem.h */,
 				EFFC29A31C7A0540004D590C /* FDBarButtonItem.m */,
 				EFFC29D61C7C4A56004D590C /* FDRefreshHeader.h */,
@@ -297,6 +340,9 @@
 		EFFC29CA1C7B0707004D590C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EFFC29F31C7C5340004D590C /* Alert */,
+				EFFC29EF1C7C530E004D590C /* Coding */,
+				EFFC29EB1C7C52D5004D590C /* Validater */,
 				EFFC29CB1C7B070D004D590C /* Category */,
 			);
 			name = Helper;
@@ -309,8 +355,41 @@
 				EFFC29D11C7C436B004D590C /* UIView+Helper.m */,
 				EFFC29CC1C7B0739004D590C /* UILabel+Helper.h */,
 				EFFC29CD1C7B0739004D590C /* UILabel+Helper.m */,
+				EFFC29E81C7C525A004D590C /* UIWindow+Helper.h */,
+				EFFC29E91C7C525A004D590C /* UIWindow+Helper.m */,
+				EFFC29E21C7C50A2004D590C /* UITextField+Helper.h */,
+				EFFC29E31C7C50A2004D590C /* UITextField+Helper.m */,
+				EFFC29E51C7C5223004D590C /* NSAttributedString+Helper.h */,
+				EFFC29E61C7C5223004D590C /* NSAttributedString+Helper.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		EFFC29EB1C7C52D5004D590C /* Validater */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29EC1C7C52EE004D590C /* FDValidater.h */,
+				EFFC29ED1C7C52EE004D590C /* FDValidater.m */,
+			);
+			name = Validater;
+			sourceTree = "<group>";
+		};
+		EFFC29EF1C7C530E004D590C /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29F01C7C5319004D590C /* FDCoding.h */,
+				EFFC29F11C7C5319004D590C /* FDCoding.m */,
+			);
+			name = Coding;
+			sourceTree = "<group>";
+		};
+		EFFC29F31C7C5340004D590C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC29F41C7C534D004D590C /* FDAlert.h */,
+				EFFC29F51C7C534D004D590C /* FDAlert.m */,
+			);
+			name = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,21 +499,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */,
+				EFFC29FC1C7C557D004D590C /* FDTextLabelCell.m in Sources */,
 				EFFC29AC1C7A08CD004D590C /* FDBaseViewModel.m in Sources */,
+				EFFC29F91C7C53D2004D590C /* FDBaseCollectionViewController.m in Sources */,
 				EFFC29DE1C7C4EC8004D590C /* FDBaseCollectionCell.m in Sources */,
 				EFFC29D51C7C4967004D590C /* FDBaseTableViewController.m in Sources */,
 				EFFC29A11C7A0482004D590C /* FDBaseViewController.m in Sources */,
+				EFFC29E41C7C50A2004D590C /* UITextField+Helper.m in Sources */,
+				EFFC29E11C7C503A004D590C /* FDTextFieldCell.m in Sources */,
 				EFFC29841C79FEC1004D590C /* AppDelegate.m in Sources */,
 				EFFC29A41C7A0540004D590C /* FDBarButtonItem.m in Sources */,
 				EFFC29DB1C7C4C26004D590C /* FDBaseModel.m in Sources */,
 				EFFC29C91C7B069C004D590C /* FDTabButton.m in Sources */,
+				EFFC29F21C7C5319004D590C /* FDCoding.m in Sources */,
+				EFFC29EA1C7C525A004D590C /* UIWindow+Helper.m in Sources */,
 				EFFC29D21C7C436B004D590C /* UIView+Helper.m in Sources */,
 				EFFC29C11C7AF52F004D590C /* FDAccountService.m in Sources */,
 				EFFC29C61C7B04DB004D590C /* FDTabBarController.m in Sources */,
 				EFFC29AF1C7A08F2004D590C /* FDBaseCell.m in Sources */,
+				EFFC29EE1C7C52EE004D590C /* FDValidater.m in Sources */,
 				EFFC29CE1C7B0739004D590C /* UILabel+Helper.m in Sources */,
+				EFFC29E71C7C5223004D590C /* NSAttributedString+Helper.m in Sources */,
 				EFFC29BC1C7AEC7E004D590C /* FDWebService.m in Sources */,
+				EFFC29F61C7C534D004D590C /* FDAlert.m in Sources */,
+				EFFC29FF1C7C5617004D590C /* FDBaseStaticCellController.m in Sources */,
 				EFFC29B31C7ADD37004D590C /* FDNetworkEngine.m in Sources */,
+				EFFC2A021C7C56F3004D590C /* FDButton.m in Sources */,
 				EFFC29D81C7C4A56004D590C /* FDRefreshHeader.m in Sources */,
 				EFFC29811C79FEC1004D590C /* main.m in Sources */,
 			);
