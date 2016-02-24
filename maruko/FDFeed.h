@@ -32,4 +32,8 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, strong) NSString *createDate;
 
+@property (nonatomic, assign) NSInteger readCount;
+
+@property (nonatomic, assign) NSInteger commentCount;
+
 @end

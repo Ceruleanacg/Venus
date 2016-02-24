@@ -7,6 +7,7 @@
 //
 
 #import "FDBaseTableViewController.h"
+#import "FDFeedsCell.h"
 
 @interface FDFeedsController : FDBaseTableViewController
 

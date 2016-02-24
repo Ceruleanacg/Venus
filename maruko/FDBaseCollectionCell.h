@@ -15,9 +15,11 @@
 
 #import "FDBaseViewModel.h"
 
+@class FDBaseViewModel;
+
 @interface FDBaseCollectionCell : UICollectionViewCell
 
-@property (nonatomic, weak) FDBaseViewModel *viewModel;
+@property (nonatomic, strong) FDBaseViewModel *viewModel;
 
 @property (nonatomic, strong) FDBaseModel *model;
 

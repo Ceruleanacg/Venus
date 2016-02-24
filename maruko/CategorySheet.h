@@ -15,4 +15,6 @@
 #import "UILabel+Helper.h"
 #import "UIView+Helper.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #endif /* CategorySheet_h */

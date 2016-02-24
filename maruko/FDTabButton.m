@@ -22,7 +22,7 @@
     button.imageView = [[UIImageView alloc] initWithImage:image highlightedImage:selectedImage];
     button.imageView.userInteractionEnabled = YES;
     
-    button.titleLabel = [UILabel labelWithText:title Color:color FontSize:fontSize Alignment:NSTextAlignmentCenter];
+    button.titleLabel = [UILabel labelWithText:title Color:color FontSize:fontSize Alignment:NSTextAlignmentCenter Light:NO];
     button.titleLabel.userInteractionEnabled = YES;
     
     button.color = color;

@@ -80,13 +80,13 @@
     _downView = [UIView new];
     _downView.backgroundColor = ColorNormalBGWhite;
     
-    _topLabel    = [UILabel labelWithText:@"欢迎使用饭爱抖客户端" Color:nil FontSize:18 Alignment:NSTextAlignmentCenter];
+    _topLabel    = [UILabel labelWithText:@"欢迎使用饭爱抖客户端" Color:nil FontSize:18 Alignment:NSTextAlignmentCenter Light:YES];
     
     WeakSelf;
     
     _logoView = [[UIImageView alloc] initWithImage:FDImageWithName(@"Main_Logo")];
     
-    _loginLabel  = [UILabel labelWithText:@"登录" Color:nil FontSize:14 Alignment:NSTextAlignmentCenter];
+    _loginLabel  = [UILabel labelWithText:@"登录" Color:nil FontSize:14 Alignment:NSTextAlignmentCenter Light:YES];
     _loginLabel.userInteractionEnabled = YES;
     _loginLabel.tapAction = ^(UIView *view) {
         
@@ -96,7 +96,7 @@
         [s_self leftTriangle];
     };
     
-    _signupLabel = [UILabel labelWithText:@"注册" Color:nil FontSize:14 Alignment:NSTextAlignmentCenter];
+    _signupLabel = [UILabel labelWithText:@"注册" Color:nil FontSize:14 Alignment:NSTextAlignmentCenter Light:YES];
     _signupLabel.userInteractionEnabled = YES;
     _signupLabel.tapAction = ^(UIView *view) {
         
@@ -238,7 +238,7 @@
     _thirdLine = [UIView new];
     _thirdLine.backgroundColor = ColorWelcomeTextPlaceholer;
     
-    _otherLoginLabel = [UILabel labelWithText:@"或者可以使用微信或者微博账号登录" Color:ColorWelcomeLabel FontSize:12 Alignment:NSTextAlignmentCenter];
+    _otherLoginLabel = [UILabel labelWithText:@"或者可以使用微信或者微博账号登录" Color:ColorWelcomeLabel FontSize:12 Alignment:NSTextAlignmentCenter Light:YES];
     
     _wechatIcon = [[UIImageView alloc] initWithImage:FDImageWithName(@"Welcome_WeChat")];
     _sinaIcon = [[UIImageView alloc] initWithImage:FDImageWithName(@"Welcome_Sina")];
@@ -246,7 +246,8 @@
     _noticeLabel = [UILabel labelWithText:@"登录或注册表示您同意我们的用户服务协议"
                                     Color:ColorWelcomeLabel
                                  FontSize:12
-                                Alignment:NSTextAlignmentCenter];
+                                Alignment:NSTextAlignmentCenter
+                                    Light:YES];
     
     [self layoutViews];
 }

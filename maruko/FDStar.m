@@ -12,7 +12,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"name"       : @"star",
+             @"name"       : @"name",
              @"avatarURL"  : @"avatar_url",
              @"weiboURL"   : @"weibo_url",
              @"fansCount"  : @"fans_count",

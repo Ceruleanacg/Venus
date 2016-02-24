@@ -7,6 +7,8 @@
 //
 
 #import "FDBaseViewModel.h"
+#import "FDBaseCell.h"
+#import "FDBaseCollectionCell.h"
 
 @implementation FDBaseViewModel {
     BOOL _isFetching;
@@ -40,7 +42,7 @@
     NSMutableDictionary *parms = [[NSMutableDictionary alloc] initWithDictionary:_prams];
     
     if (mode == FDFetchModeMore) {
-        parms[@"lastID"]  = [(FDBaseModel *)[_objects lastObject] objectID];
+        parms[@"last_id"]  = [(FDBaseModel *)[_objects lastObject] objectID];
     }
     
     WeakSelf;
@@ -106,7 +108,6 @@
     [cell bindWithModel:_objects[indexPath.row]];
     
     return cell;
-    
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -118,7 +119,6 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return _objects.count;
 }
-
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     

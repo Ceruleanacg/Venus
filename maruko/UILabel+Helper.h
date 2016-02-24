@@ -10,6 +10,6 @@
 
 @interface UILabel (Helper)
 
-+ (UILabel *)labelWithText:(NSString *)text Color:(UIColor *)color FontSize:(CGFloat)fontSize Alignment:(NSTextAlignment)alignment;
++ (UILabel *)labelWithText:(NSString *)text Color:(UIColor *)color FontSize:(CGFloat)fontSize Alignment:(NSTextAlignment)alignment Light:(BOOL)light;
 
 @end

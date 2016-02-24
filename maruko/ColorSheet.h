@@ -34,6 +34,7 @@
 #define ColorFeedSource             [UIColor colorWithHex:0x9B9B9B]
 #define ColorFeedLine               [UIColor colorWithHex:0xE1E1E1]
 #define ColorFeedTitle              [UIColor colorWithHex:0x474747]
+#define ColorFeedInfo               [UIColor colorWithHex:0x9B9B9B]
 
 
 #endif /* ColorSheet_h */

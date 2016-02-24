@@ -19,6 +19,9 @@
 		EFAAC6F31C7D9DB300369344 /* Feeds_Collect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6F11C7D9DB300369344 /* Feeds_Collect@3x.png */; };
 		EFAAC6F61C7DA00600369344 /* FDFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6F51C7DA00600369344 /* FDFeed.m */; };
 		EFAAC6F91C7DA2C200369344 /* FDStar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6F81C7DA2C200369344 /* FDStar.m */; };
+		EFAAC6FC1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6FA1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png */; };
+		EFAAC6FD1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6FB1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png */; };
+		EFAAC7001C7DE7E900369344 /* FDDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6FF1C7DE7E900369344 /* FDDateFormatter.m */; };
 		EFFC29811C79FEC1004D590C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29801C79FEC1004D590C /* main.m */; };
 		EFFC29841C79FEC1004D590C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29831C79FEC1004D590C /* AppDelegate.m */; };
 		EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC29881C79FEC1004D590C /* Main.storyboard */; };
@@ -97,6 +100,10 @@
 		EFAAC6F51C7DA00600369344 /* FDFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeed.m; sourceTree = "<group>"; };
 		EFAAC6F71C7DA2C200369344 /* FDStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStar.h; sourceTree = "<group>"; };
 		EFAAC6F81C7DA2C200369344 /* FDStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStar.m; sourceTree = "<group>"; };
+		EFAAC6FA1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Avatar_Placeholder@2x.png"; path = "Arts/Feeds_Avatar_Placeholder@2x.png"; sourceTree = "<group>"; };
+		EFAAC6FB1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Avatar_Placeholder@3x.png"; path = "Arts/Feeds_Avatar_Placeholder@3x.png"; sourceTree = "<group>"; };
+		EFAAC6FE1C7DE7E900369344 /* FDDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDateFormatter.h; sourceTree = "<group>"; };
+		EFAAC6FF1C7DE7E900369344 /* FDDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDateFormatter.m; sourceTree = "<group>"; };
 		EFFC297C1C79FEC1004D590C /* maruko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maruko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFC29801C79FEC1004D590C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFFC29821C79FEC1004D590C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -236,10 +243,21 @@
 		EFAAC6EF1C7D9DAC00369344 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAC6FA1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png */,
+				EFAAC6FB1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png */,
 				EFAAC6F01C7D9DB300369344 /* Feeds_Collect@2x.png */,
 				EFAAC6F11C7D9DB300369344 /* Feeds_Collect@3x.png */,
 			);
 			name = Feeds;
+			sourceTree = "<group>";
+		};
+		EFAAC7011C7DE99800369344 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAC6FE1C7DE7E900369344 /* FDDateFormatter.h */,
+				EFAAC6FF1C7DE7E900369344 /* FDDateFormatter.m */,
+			);
+			name = DateFormatter;
 			sourceTree = "<group>";
 		};
 		EFFC29731C79FEC1004D590C = {
@@ -440,6 +458,7 @@
 		EFFC29CA1C7B0707004D590C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAC7011C7DE99800369344 /* DateFormatter */,
 				EFFC29F31C7C5340004D590C /* Alert */,
 				EFFC29EF1C7C530E004D590C /* Coding */,
 				EFFC29EB1C7C52D5004D590C /* Validater */,
@@ -642,8 +661,10 @@
 				EFFC2A2A1C7C8C64004D590C /* Tab_Find@2x.png in Resources */,
 				EFAAC6E51C7D981400369344 /* Welcome_Sina@3x.png in Resources */,
 				EFAAC6DE1C7D8C9F00369344 /* Main_Background@2x.png in Resources */,
+				EFAAC6FD1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png in Resources */,
 				EFAAC6E41C7D981400369344 /* Welcome_Sina@2x.png in Resources */,
 				EFFC2A251C7C8C64004D590C /* Tab_Day_Selected@2x.png in Resources */,
+				EFAAC6FC1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png in Resources */,
 				EFAAC6F21C7D9DB300369344 /* Feeds_Collect@2x.png in Resources */,
 				EFAAC6E61C7D981400369344 /* Welcome_WeChat@2x.png in Resources */,
 				EFFC29B61C7AE39B004D590C /* api.plist in Resources */,
@@ -699,6 +720,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAAC7001C7DE7E900369344 /* FDDateFormatter.m in Sources */,
 				EFAAC6F91C7DA2C200369344 /* FDStar.m in Sources */,
 				EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */,
 				EFFC29FC1C7C557D004D590C /* FDTextLabelCell.m in Sources */,

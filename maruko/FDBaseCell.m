@@ -8,9 +8,6 @@
 
 #import "FDBaseCell.h"
 
-#import "FDBaseViewModel.h"
-#import "FDBaseModel.h"
-
 @implementation FDBaseCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {

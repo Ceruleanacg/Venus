@@ -13,9 +13,10 @@
 #import "ColorSheet.h"
 #import "LayoutSheet.h"
 #import "CategorySheet.h"
+#import "ComponentSheet.h"
 
-@class FDBaseViewModel;
-@class FDBaseModel;
+#import "FDBaseViewModel.h"
+#import "FDBaseModel.h"
 
 @interface FDBaseCell : UITableViewCell
 

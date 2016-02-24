@@ -10,4 +10,10 @@
 
 @implementation FDBaseModel
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"objectID" : @"_id"
+             };
+}
+
 @end

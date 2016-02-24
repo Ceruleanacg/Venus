@@ -32,6 +32,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     FDFeedsController *feedsViewController = [[FDFeedsController alloc] init];
+    feedsViewController.viewModel = [[FDBaseViewModel alloc] initWithAPI:@"star/news" CellClass:[FDFeedsCell class]];
     
     FDNavigationController *feedsNavigationController = [[FDNavigationController alloc] initWithRootViewController:feedsViewController];
     

@@ -7,8 +7,11 @@
 //
 
 #import "FDBaseCell.h"
+#import "FDFeed.h"
 
 @interface FDFeedsCell : FDBaseCell
+
+@property (nonatomic, strong) UIView *topSpaceView;
 
 @property (nonatomic, strong) UIImageView *avatarIcon;
 

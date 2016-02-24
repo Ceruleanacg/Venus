@@ -10,11 +10,18 @@
 
 @implementation UILabel (Helper)
 
-+ (UILabel *)labelWithText:(NSString *)text Color:(UIColor *)color FontSize:(CGFloat)fontSize Alignment:(NSTextAlignment)alignment {
++ (UILabel *)labelWithText:(NSString *)text Color:(UIColor *)color FontSize:(CGFloat)fontSize Alignment:(NSTextAlignment)alignment Light:(BOOL)light {
+    
+    UIFont *font = [UIFont systemFontOfSize:fontSize];
+    
+    if (light) {
+        NSString *fontName = font.fontName;
+        font = [UIFont fontWithName:[fontName stringByReplacingOccurrencesOfString:@"Regular" withString:@"Light"] size:fontSize];
+    }
     
     UILabel *label = [UILabel new];
     label.text = text;
-    label.font = [UIFont systemFontOfSize:fontSize];
+    label.font = font;
     label.textColor = color ? color : [UIColor whiteColor];
     label.textAlignment = alignment;
     

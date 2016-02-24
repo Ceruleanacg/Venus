@@ -12,9 +12,6 @@
 
 #import "FDBaseModel.h"
 
-#import "FDBaseCell.h"
-#import "FDBaseCollectionCell.h"
-
 typedef enum : NSUInteger {
     FDFetchModeNew,
     FDFetchModeMore,
