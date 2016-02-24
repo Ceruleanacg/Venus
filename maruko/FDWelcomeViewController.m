@@ -70,13 +70,13 @@
     _contentView = [[UIView alloc] initWithFrame:self.view.bounds];
     _contentView.backgroundColor = ColorNormalBGWhite;
     
-    _topView = [[UIImageView alloc] initWithImage:FDImageWithName(@"Main_Welcome")];
+    _topView = [[UIImageView alloc] initWithImage:FDImageWithName(@"Main_Background")];
     _topView.userInteractionEnabled = YES;
     
     _downView = [UIView new];
     _downView.backgroundColor = ColorNormalBGWhite;
     
-    _topLabel    = [UILabel labelWithText:@"欢迎使用优印校园客户端" Color:nil FontSize:18 Alignment:NSTextAlignmentCenter];
+    _topLabel    = [UILabel labelWithText:@"欢迎使用饭爱抖客户端" Color:nil FontSize:18 Alignment:NSTextAlignmentCenter];
     
     WeakSelf;
     
@@ -107,7 +107,7 @@
     _usernameField = [UITextField new];
     _usernameField.keyboardType  = UIKeyboardTypeNumberPad;
     _usernameField.returnKeyType = UIReturnKeyNext;
-    _usernameField.attributedPlaceholder = [NSAttributedString attributedStringWithString:@"手机号码" Color:ColorCellPlaceholder];
+    _usernameField.attributedPlaceholder = [NSAttributedString attributedStringWithString:@"手机号码" Color:ColorWelcomeTextPlaceholer];
     _usernameField.beginAction = ^(NSString *text, UITextField *textField) {
         
         StrongSelf;
@@ -125,7 +125,7 @@
     _passwordField = [UITextField new];
     _passwordField.secureTextEntry = YES;
     _passwordField.returnKeyType   = UIReturnKeyDone;
-    _passwordField.attributedPlaceholder = [NSAttributedString attributedStringWithString:@"密码" Color:ColorCellPlaceholder];
+    _passwordField.attributedPlaceholder = [NSAttributedString attributedStringWithString:@"密码" Color:ColorWelcomeTextPlaceholer];
     _passwordField.doneAction = ^(NSString *text, UITextField *textField) {
         
         StrongSelf;
@@ -140,7 +140,7 @@
             if ([FDValidater validateMobile:username] && [FDValidater validatePassword:password]) {
                 
                 NSDictionary *parms = @{@"username" : username,
-                                        @"password" : password};
+                                        @"password" : [FDCoding md5:password]};
                 
                 [FDAccountService loginWithParms:parms Callback:^(BOOL success) {
                     if (success) {
@@ -181,10 +181,16 @@
             NSString *smsCode  = s_self->_smsCodeField.text;
             
             NSDictionary *parms = @{@"username" : username,
-                                    @"password" : [FDCoding md5:password],
-                                    @"smsCode"  : smsCode};
+                                    @"password" : password,
+                                    @"smscode"  : smsCode};
             
             if (s_self->_actionType == FDWelcomeActionTypeRegister) {
+                
+                [FDAccountService registerWithParms:parms Callback:^(BOOL success) {
+                    if (success) {
+                        [s_self dismissViewControllerAnimated:YES completion:nil];
+                    }
+                }];
                 
             } else {
                 
@@ -214,8 +220,10 @@
                 }
             }];
         }
-        
     }];
+    
+    [_smsCodeButton setTitleColor:ColorWelcomeTextPlaceholer forState:UIControlStateNormal];
+    [_forgetButton setTitleColor:ColorWelcomeTextPlaceholer forState:UIControlStateNormal];
     
     _firstLine = [UIView new];
     _firstLine.backgroundColor = ColorWelcomeTextPlaceholer;

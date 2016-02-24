@@ -5,10 +5,10 @@
 	<key>MODEL_MAP</key>
 	<string></string>
 	<key>API_VERSION</key>
-	<string></string>
+	<string>v1</string>
 	<key>RELEASE_HOST</key>
 	<string></string>
 	<key>DEBUG_HOST</key>
-	<string></string>
+	<string>localhost:8000</string>
 </dict>
 </plist>

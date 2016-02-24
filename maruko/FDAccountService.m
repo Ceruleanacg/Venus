@@ -15,4 +15,47 @@
     return token.length > 0 ? NO : YES;
 }
 
+
++ (void)loginWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
+    [FDWebService commonRequestWithAPI:@"account/login" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+        
+        if (success) {
+            [[FDNetworkEngine sharedEngine] setToken:resultDic[kTokenKey]];
+        }
+        
+        if (callback) {
+            callback(success);
+        }
+    }];
+}
+
++ (void)registerWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
+    [FDWebService commonRequestWithAPI:@"account/register" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+        
+        if (success) {
+            [[FDNetworkEngine sharedEngine] setToken:resultDic[kTokenKey]];
+        }
+        
+        if (callback) {
+            callback(success);
+        }
+    }];
+}
+
++ (void)getSMSCodeWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
+    [FDWebService commonRequestWithAPI:@"account/smscode" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+        if (callback) {
+            callback(success);
+        }
+    }];
+}
+
++ (void)forgetPasswordWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
+    [FDWebService commonRequestWithAPI:@"account/forget" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+        if (callback) {
+            callback(success);
+        }
+    }];
+}
+
 @end

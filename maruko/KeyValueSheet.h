@@ -9,7 +9,7 @@
 #ifndef KeyValueSheet_h
 #define KeyValueSheet_h
 
-#define kTokenKey    @"TOKEN"
+#define kTokenKey    @"token"
 #define kResultsKey  @"results"
 
 #endif /* KeyValueSheet_h */
