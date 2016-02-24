@@ -15,5 +15,7 @@ pod 'MJRefresh'
 
 pod 'Mantle'
 
+pod 'SDWebImage'
+
 end
 

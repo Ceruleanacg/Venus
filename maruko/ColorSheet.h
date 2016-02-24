@@ -30,4 +30,10 @@
 #define ColorWelcomeLabel           [UIColor colorWithHex:0x939393]
 #define ColorWelcomeText_H          [UIColor colorWithHex:0xFA80B0]
 
+#define ColorFeedName               [UIColor colorWithHex:0x474747]
+#define ColorFeedSource             [UIColor colorWithHex:0x9B9B9B]
+#define ColorFeedLine               [UIColor colorWithHex:0xE1E1E1]
+#define ColorFeedTitle              [UIColor colorWithHex:0x474747]
+
+
 #endif /* ColorSheet_h */

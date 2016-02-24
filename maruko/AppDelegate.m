@@ -12,6 +12,7 @@
 
 #import "FDTabBarController.h"
 #import "FDWelcomeViewController.h"
+#import "FDFeedsController.h"
 
 #import "FDAccountService.h"
 
@@ -30,7 +31,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    FDBaseViewController *feedsViewController = [[FDBaseViewController alloc] init];
+    FDFeedsController *feedsViewController = [[FDFeedsController alloc] init];
     
     FDNavigationController *feedsNavigationController = [[FDNavigationController alloc] initWithRootViewController:feedsViewController];
     
