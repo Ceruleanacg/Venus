@@ -10,4 +10,9 @@
 
 @implementation FDAccountService
 
++ (BOOL)checkIfNeedLogin {
+    NSString *token = [[FDNetworkEngine sharedEngine] token];
+    return token.length > 0 ? NO : YES;
+}
+
 @end

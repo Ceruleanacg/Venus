@@ -22,7 +22,7 @@
 + (instancetype)buttonWithType:(UIButtonType)buttonType Title:(NSString *)title FontSize:(CGFloat)fontSize ActionBlock:(FDButtonAction)actionBlock {
     FDButton *button = [FDButton buttonWithType:buttonType ActionBlock:actionBlock];
     
-    [button setTitleColor:ColorButtonTitle forState:UIControlStateNormal];
+    [button setTitleColor:ColorNormalButtonTitle forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont systemFontOfSize:fontSize]];
     [button setTitle:title forState:UIControlStateNormal];
     

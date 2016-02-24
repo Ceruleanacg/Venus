@@ -12,6 +12,7 @@
 #import "FDNavigationController.h"
 #import "FDBaseViewModel.h"
 
+#import "ComponentSheet.h"
 #import "CategorySheet.h"
 #import "LayoutSheet.h"
 #import "ColorSheet.h"

@@ -27,12 +27,12 @@
         
         
         _tabBar = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - TABBAR_HEIGHT, SCREEN_WIDTH, TABBAR_HEIGHT)];
-        _tabBar.backgroundColor = ColorBGWhite;
+        _tabBar.backgroundColor = ColorNormalBGWhite;
         
         [self.view addSubview:_tabBar];
         
         _tabLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.5)];
-        _tabLine.backgroundColor = ColorTabLine;
+        _tabLine.backgroundColor = ColorNormalTabLine;
         
         [_tabBar addSubview:_tabLine];
         

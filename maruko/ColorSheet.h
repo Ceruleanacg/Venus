@@ -11,15 +11,23 @@
 
 #import <EDColor.h>
 
-#define ColorNaviTitle        [UIColor colorWithHex:0x474747]
-#define ColorButtonTitle      [UIColor colorWithHex:0x474747]
-#define ColorBGWhite          [UIColor colorWithHex:0xFFFFFF]
-#define ColorTabLine          [UIColor colorWithHex:0xD8D8D8]
-#define ColorTabTitle         [UIColor colorWithHex:0x474747]
-#define ColorTabTitle_H       [UIColor colorWithHex:0xFD97BE]
-#define ColorCellLine         [UIColor colorWithHex:0xE1E1E1]
-#define ColorCellText         [UIColor colorWithHex:0x474747]
-#define ColorCellPlaceholder  [UIColor colorWithHex:0x999999]
-#define ColorTableSection     [UIColor colorWithHex:0xF7F7F7]
+#define ColorNormalNaviTitle        [UIColor colorWithHex:0x474747]
+#define ColorNormalButtonTitle      [UIColor colorWithHex:0x474747]
+#define ColorNormalBGWhite          [UIColor colorWithHex:0xFFFFFF]
+#define ColorNormalTabLine          [UIColor colorWithHex:0xD8D8D8]
+
+#define ColorTabTitle               [UIColor colorWithHex:0x474747]
+#define ColorTabTitle_H             [UIColor colorWithHex:0xFD97BE]
+
+#define ColorCellLine               [UIColor colorWithHex:0xE1E1E1]
+#define ColorCellText               [UIColor colorWithHex:0x474747]
+#define ColorCellPlaceholder        [UIColor colorWithHex:0x999999]
+
+#define ColorTableSection           [UIColor colorWithHex:0xF7F7F7]
+
+#define ColorWelcomeTextMain        [UIColor colorWithHex:0x474747]
+#define ColorWelcomeTextPlaceholer  [UIColor colorWithHex:0xDFDFDF]
+#define ColorWelcomeLabel           [UIColor colorWithHex:0x939393]
+#define ColorWelcomeText_H          [UIColor colorWithHex:0xFA80B0]
 
 #endif /* ColorSheet_h */

@@ -10,8 +10,14 @@
 
 @interface FDAccountService : FDWebService
 
++ (BOOL)checkIfNeedLogin;
+
 + (void)loginWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback;
 
 + (void)registerWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback;
+
++ (void)getSMSCodeWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback;
+
++ (void)forgetPasswordWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback;
 
 @end

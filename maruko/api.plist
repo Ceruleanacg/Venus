@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   api.plist
-   maruko
-
-   Created by 王澍宇 on 16/2/22.
-   Copyright (c) 2016年 Shuyu. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>MODEL_MAP</key>
+	<string></string>
+	<key>API_VERSION</key>
+	<string></string>
+	<key>RELEASE_HOST</key>
+	<string></string>
+	<key>DEBUG_HOST</key>
+	<string></string>
+</dict>
 </plist>

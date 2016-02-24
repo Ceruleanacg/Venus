@@ -6,7 +6,14 @@
 //  Copyright © 2016年 Shuyu. All rights reserved.
 //
 
+#import <AFNetworking.h>
+
 #import "AppDelegate.h"
+
+#import "FDTabBarController.h"
+#import "FDWelcomeViewController.h"
+
+#import "FDAccountService.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +23,61 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    FDBaseViewController *feedsViewController = [[FDBaseViewController alloc] init];
+    
+    FDNavigationController *feedsNavigationController = [[FDNavigationController alloc] initWithRootViewController:feedsViewController];
+    
+    FDBaseViewController *dayViewController = [[FDBaseViewController alloc] init];
+    
+    FDNavigationController *dayNavigationController = [[FDNavigationController alloc] initWithRootViewController:dayViewController];
+    
+    FDBaseViewController *findViewController = [[FDBaseViewController alloc] init];
+    
+    FDNavigationController *findNavigationController = [[FDNavigationController alloc] initWithRootViewController:findViewController];
+    
+    FDBaseViewController *followViewController = [[FDBaseViewController alloc] init];
+    
+    FDNavigationController *followNavigationController = [[FDNavigationController alloc] initWithRootViewController:followViewController];
+    
+    FDBaseViewController *userViewController = [[FDBaseViewController alloc] init];
+    
+    FDNavigationController *userNavigationController = [[FDNavigationController alloc] initWithRootViewController:userViewController];
+    
+    FDTabBarController *tabBarController = [[FDTabBarController alloc] initWithViewControllers:@[feedsNavigationController,
+                                                                                                 dayNavigationController,
+                                                                                                 findNavigationController,
+                                                                                                 followNavigationController,
+                                                                                                 userNavigationController]
+                                                                                        Titles:@[@"动态", @"行程", @"发现", @"关注", @"我的"]
+                                                                                        Images:@[FDImageWithName(@"Tab_Feeds"),
+                                                                                                 FDImageWithName(@"Tab_Day"),
+                                                                                                 FDImageWithName(@"Tab_Find"),
+                                                                                                 FDImageWithName(@"Tab_Follow"),
+                                                                                                 FDImageWithName(@"Tab_Me")]
+                                                                                SelectedImages:@[FDImageWithName(@"Tab_Feeds_Selected"),
+                                                                                                 FDImageWithName(@"Tab_Day_Selected"),
+                                                                                                 FDImageWithName(@"Tab_Find_Selected"),
+                                                                                                 FDImageWithName(@"Tab_Follow_Selected"),
+                                                                                                 FDImageWithName(@"Tab_Me_Selected")]];
+    [self.window setRootViewController:tabBarController];
+    [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setBarTintColor:ColorNormalBGWhite];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : ColorNormalNaviTitle}];
+    
+    if ([FDAccountService checkIfNeedLogin]) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [UIWindow presentViewController:[FDWelcomeViewController new] Animated:YES Completion:nil];
+        });
+    }
     
     return YES;
 }

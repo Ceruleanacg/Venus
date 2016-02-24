@@ -34,11 +34,10 @@
     [button.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@0);
         make.centerX.equalTo(@0);
-        make.size.mas_equalTo(CGSizeMake(25, 27));
     }];
     
     [button.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(button.imageView.mas_bottom).offset(4);
+        make.bottom.equalTo(@(-2));
         make.centerX.equalTo(button.imageView);
     }];
     

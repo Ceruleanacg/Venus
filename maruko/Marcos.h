@@ -15,6 +15,6 @@
 
 #define DLogError(__ERROR__) if (__ERROR__) { NSLog(@"%@", __ERROR__); }
 
-#define CPImageWithName(__IMAGE_NAME__) [UIImage imageNamed:__IMAGE_NAME__]
+#define FDImageWithName(__IMAGE_NAME__) [UIImage imageNamed:__IMAGE_NAME__]
 
 #endif /* Marcos_h */

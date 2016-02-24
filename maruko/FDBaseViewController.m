@@ -18,10 +18,10 @@
     UIBarButtonItem *leftItem = nil;
     
     if ([self.navigationController.viewControllers count] > 1) {
-        leftItem = [FDBarButtonItem itemWithTitle:@"返回" Color:ColorNaviTitle Target:self Action:@selector((goBack))];
+        leftItem = [FDBarButtonItem itemWithTitle:@"返回" Color:ColorNormalNaviTitle Target:self Action:@selector((goBack))];
     } else {
         if (self.presentingViewController) {
-            leftItem = [FDBarButtonItem itemWithTitle:@"返回" Color:ColorNaviTitle Target:self Action:@selector((dismiss))];
+            leftItem = [FDBarButtonItem itemWithTitle:@"返回" Color:ColorNormalNaviTitle Target:self Action:@selector((dismiss))];
         }
     }
     
