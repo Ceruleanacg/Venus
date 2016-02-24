@@ -33,6 +33,10 @@
     UIView *_secondLine;
     UIView *_thirdLine;
     
+    UILabel *_otherLoginLabel;
+    UIImageView *_wechatIcon;
+    UIImageView *_sinaIcon;
+    
     FDButton *_forgetButton;
     FDButton *_smsCodeButton;
     
@@ -234,6 +238,11 @@
     _thirdLine = [UIView new];
     _thirdLine.backgroundColor = ColorWelcomeTextPlaceholer;
     
+    _otherLoginLabel = [UILabel labelWithText:@"或者可以使用微信或者微博账号登录" Color:ColorWelcomeLabel FontSize:12 Alignment:NSTextAlignmentCenter];
+    
+    _wechatIcon = [[UIImageView alloc] initWithImage:FDImageWithName(@"Welcome_WeChat")];
+    _sinaIcon = [[UIImageView alloc] initWithImage:FDImageWithName(@"Welcome_Sina")];
+    
     _noticeLabel = [UILabel labelWithText:@"登录或注册表示您同意我们的用户服务协议"
                                     Color:ColorWelcomeLabel
                                  FontSize:12
@@ -263,6 +272,10 @@
     [_downView addSubview:_firstLine];
     [_downView addSubview:_secondLine];
     [_downView addSubview:_thirdLine];
+    
+    [_downView addSubview:_otherLoginLabel];
+    [_downView addSubview:_wechatIcon];
+    [_downView addSubview:_sinaIcon];
     
     [_downView addSubview:_noticeLabel];
     
@@ -345,8 +358,23 @@
         make.height.equalTo(_firstLine);
     }];
     
+    [_otherLoginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_thirdLine.mas_bottom).offset(20);
+        make.centerX.equalTo(@0);
+    }];
+    
+    [_wechatIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_otherLoginLabel.mas_bottom).offset(20);
+        make.left.equalTo(_otherLoginLabel);
+    }];
+    
+    [_sinaIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_wechatIcon);
+        make.right.equalTo(_otherLoginLabel.mas_right);
+    }];
+    
     [_noticeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(@(-20));
+        make.bottom.equalTo(@(-10));
         make.centerX.equalTo(@0);
     }];
 }

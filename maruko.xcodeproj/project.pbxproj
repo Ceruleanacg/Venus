@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		EFAAC6DE1C7D8C9F00369344 /* Main_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */; };
 		EFAAC6DF1C7D8C9F00369344 /* Main_Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */; };
+		EFAAC6E41C7D981400369344 /* Welcome_Sina@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */; };
+		EFAAC6E51C7D981400369344 /* Welcome_Sina@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E11C7D981400369344 /* Welcome_Sina@3x.png */; };
+		EFAAC6E61C7D981400369344 /* Welcome_WeChat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E21C7D981400369344 /* Welcome_WeChat@2x.png */; };
+		EFAAC6E71C7D981400369344 /* Welcome_WeChat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E31C7D981400369344 /* Welcome_WeChat@3x.png */; };
+		EFAAC6EB1C7D9A0E00369344 /* FDFeedsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6EA1C7D9A0E00369344 /* FDFeedsController.m */; };
 		EFFC29811C79FEC1004D590C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29801C79FEC1004D590C /* main.m */; };
 		EFFC29841C79FEC1004D590C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFC29831C79FEC1004D590C /* AppDelegate.m */; };
 		EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFC29881C79FEC1004D590C /* Main.storyboard */; };
@@ -73,6 +78,12 @@
 		AC95B59801ECEDC0D4903A61 /* Pods-maruko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maruko.release.xcconfig"; path = "Pods/Target Support Files/Pods-maruko/Pods-maruko.release.xcconfig"; sourceTree = "<group>"; };
 		EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Background@2x.png"; path = "Arts/Main_Background@2x.png"; sourceTree = "<group>"; };
 		EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Background@3x.png"; path = "Arts/Main_Background@3x.png"; sourceTree = "<group>"; };
+		EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_Sina@2x.png"; path = "Arts/Welcome_Sina@2x.png"; sourceTree = "<group>"; };
+		EFAAC6E11C7D981400369344 /* Welcome_Sina@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_Sina@3x.png"; path = "Arts/Welcome_Sina@3x.png"; sourceTree = "<group>"; };
+		EFAAC6E21C7D981400369344 /* Welcome_WeChat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_WeChat@2x.png"; path = "Arts/Welcome_WeChat@2x.png"; sourceTree = "<group>"; };
+		EFAAC6E31C7D981400369344 /* Welcome_WeChat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_WeChat@3x.png"; path = "Arts/Welcome_WeChat@3x.png"; sourceTree = "<group>"; };
+		EFAAC6E91C7D9A0E00369344 /* FDFeedsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsController.h; sourceTree = "<group>"; };
+		EFAAC6EA1C7D9A0E00369344 /* FDFeedsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsController.m; sourceTree = "<group>"; };
 		EFFC297C1C79FEC1004D590C /* maruko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maruko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFC29801C79FEC1004D590C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFFC29821C79FEC1004D590C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -196,6 +207,15 @@
 				1B14442592AB4D2EA4140032 /* libPods-maruko.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFAAC6E81C7D99F300369344 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAC6E91C7D9A0E00369344 /* FDFeedsController.h */,
+				EFAAC6EA1C7D9A0E00369344 /* FDFeedsController.m */,
+			);
+			name = Feeds;
 			sourceTree = "<group>";
 		};
 		EFFC29731C79FEC1004D590C = {
@@ -446,6 +466,7 @@
 		EFFC2A051C7C5D97004D590C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAC6E81C7D99F300369344 /* Feeds */,
 				EFFC2A061C7C5E2D004D590C /* Login */,
 			);
 			name = Features;
@@ -479,6 +500,10 @@
 			children = (
 				EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */,
 				EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */,
+				EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */,
+				EFAAC6E11C7D981400369344 /* Welcome_Sina@3x.png */,
+				EFAAC6E21C7D981400369344 /* Welcome_WeChat@2x.png */,
+				EFAAC6E31C7D981400369344 /* Welcome_WeChat@3x.png */,
 			);
 			name = Welcome;
 			sourceTree = "<group>";
@@ -582,11 +607,15 @@
 				EFFC2A281C7C8C64004D590C /* Tab_Feeds@2x.png in Resources */,
 				EFFC2A2E1C7C8C64004D590C /* Tab_Follow@2x.png in Resources */,
 				EFFC2A381C7C8C64004D590C /* Tab_Me@3x.png in Resources */,
+				EFAAC6E71C7D981400369344 /* Welcome_WeChat@3x.png in Resources */,
 				EFFC2A2C1C7C8C64004D590C /* Tab_Follow_Selected@3x.png in Resources */,
 				EFFC2A261C7C8C64004D590C /* Tab_Day@2x.png in Resources */,
 				EFFC2A2A1C7C8C64004D590C /* Tab_Find@2x.png in Resources */,
+				EFAAC6E51C7D981400369344 /* Welcome_Sina@3x.png in Resources */,
 				EFAAC6DE1C7D8C9F00369344 /* Main_Background@2x.png in Resources */,
+				EFAAC6E41C7D981400369344 /* Welcome_Sina@2x.png in Resources */,
 				EFFC2A251C7C8C64004D590C /* Tab_Day_Selected@2x.png in Resources */,
+				EFAAC6E61C7D981400369344 /* Welcome_WeChat@2x.png in Resources */,
 				EFFC29B61C7AE39B004D590C /* api.plist in Resources */,
 				EFFC298C1C79FEC1004D590C /* Assets.xcassets in Resources */,
 				EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */,
@@ -642,6 +671,7 @@
 				EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */,
 				EFFC29FC1C7C557D004D590C /* FDTextLabelCell.m in Sources */,
 				EFFC29AC1C7A08CD004D590C /* FDBaseViewModel.m in Sources */,
+				EFAAC6EB1C7D9A0E00369344 /* FDFeedsController.m in Sources */,
 				EFFC29F91C7C53D2004D590C /* FDBaseCollectionViewController.m in Sources */,
 				EFFC29DE1C7C4EC8004D590C /* FDBaseCollectionCell.m in Sources */,
 				EFFC29D51C7C4967004D590C /* FDBaseTableViewController.m in Sources */,
