@@ -8,24 +8,24 @@
 
 #import "FDImageViewerController.h"
 
-static FDImageViewerController *imageViewerController = nil;
-
 @implementation FDImageViewerController
 
-+ (void)previewWithContentView:(UIView *)contentView Image:(UIImage *)image {
++ (void)previewImage:(UIImage *)image {
     
-    if (!imageViewerController) {
-        imageViewerController = [[self alloc] init];
+    FDImageViewerController *viewerController = [[self alloc] init];
+    viewerController.image = image;
+    
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    
+    UIViewController *presentedViewController = nil;
+    
+    if ([[window rootViewController] presentedViewController]) {
+        presentedViewController = [[window rootViewController] presentedViewController];
+    } else {
+        presentedViewController = [window rootViewController];
     }
     
-    imageViewerController.image = image;
-    imageViewerController.contentView = contentView;
-    
-    [UIView transitionFromView:imageViewerController.contentView
-                        toView:imageViewerController.view
-                      duration:1.0
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    completion:nil];
+    [presentedViewController presentViewController:viewerController animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
@@ -41,11 +41,7 @@ static FDImageViewerController *imageViewerController = nil;
     _imageView.userInteractionEnabled = YES;
     _imageView.tapAction = ^(UIView *view) {
         StrongSelf;
-        [UIView transitionFromView:s_self.view
-                            toView:s_self.contentView
-                          duration:1.0
-                           options:UIViewAnimationOptionTransitionCrossDissolve
-                        completion:nil];
+        [s_self dismissViewControllerAnimated:YES completion:nil];
     };
     
     _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];

@@ -14,10 +14,8 @@
 
 @property (nonatomic, strong, readonly) UIImageView *imageView;
 
-@property (nonatomic, weak) UIView *contentView;
-
 @property (nonatomic, strong) UIImage *image;
 
-+ (void)previewWithContentView:(UIView *)contentView Image:(UIImage *)image;
++ (void)previewImage:(UIImage *)image;
 
 @end
