@@ -13,7 +13,7 @@
 + (NSDate *)dateFromString:(NSString *)dateString {
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
     [dateFormatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
     
     NSDate *destDate = [dateFormatter dateFromString:dateString];

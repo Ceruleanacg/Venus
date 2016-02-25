@@ -138,17 +138,7 @@
     
     if (feed.imageURLs.count) {
         
-        NSString *targetURL = nil;
-        
-        for (NSString *imageURL in feed.imageURLs) {
-            if ([imageURL containsString:@"bmiddle"]) {
-                targetURL = imageURL;
-            }
-        }
-        
-        if (!targetURL) {
-            targetURL = [feed.imageURLs firstObject];
-        }
+        NSString *targetURL = [feed.imageURLs firstObject];
         
         [_feedImageView sd_setImageWithURL:[NSURL URLWithString:targetURL] placeholderImage:[UIImage new]];
     }

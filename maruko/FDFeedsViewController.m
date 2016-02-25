@@ -9,13 +9,18 @@
 #import "FDFeedsViewController.h"
 #import "FDAccountService.h"
 
+#import "FDFeedsDetailViewController.h"
+
 @implementation FDFeedsViewController {
     UISegmentedControl *_segmentedControl;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupUserInterface];
+}
+
+- (void)setupUserInterface {
     WeakSelf;
     
     NSArray *items = @[@"全部", @"动态", @"新闻"];
@@ -63,7 +68,22 @@
             
         }];
     }
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
+    FDFeed *feed = self.viewModel.objects[indexPath.row];
+    
+    FDFeedsDetailViewModel *viewModel = [[FDFeedsDetailViewModel alloc] initWithAPI:@"star/news/comment" CellClass:[FDFeedsDetailCommentCell class]];
+    viewModel.feed = feed;
+    
+    FDFeedsDetailViewController *feedsDetailViewController = [FDFeedsDetailViewController new];
+    feedsDetailViewController.viewModel = viewModel;
+    feedsDetailViewController.title = feed.star.name;
+    
+    [self.navigationController pushViewController:feedsDetailViewController animated:YES];
 }
 
 @end

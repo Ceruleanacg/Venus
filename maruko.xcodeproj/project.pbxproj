@@ -12,6 +12,13 @@
 		EF7A919C1C7EDA4F009A0407 /* Main_Loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7A919A1C7EDA4F009A0407 /* Main_Loading@2x.png */; };
 		EF7A919D1C7EDA4F009A0407 /* Main_Loading@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7A919B1C7EDA4F009A0407 /* Main_Loading@3x.png */; };
 		EF7A91A11C7EE652009A0407 /* UISegmentedControl+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91A01C7EE652009A0407 /* UISegmentedControl+Helper.m */; };
+		EF7A91A51C7EFD14009A0407 /* FDFeedsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91A41C7EFD14009A0407 /* FDFeedsDetailViewController.m */; };
+		EF7A91A81C7EFE83009A0407 /* FDFeedsDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91A71C7EFE83009A0407 /* FDFeedsDetailCell.m */; };
+		EF7A91AE1C7F2F25009A0407 /* FDFeedsDetailCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91AD1C7F2F25009A0407 /* FDFeedsDetailCommentCell.m */; };
+		EF7A91B11C7F2FE6009A0407 /* FDComment.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91B01C7F2FE6009A0407 /* FDComment.m */; };
+		EF7A91B41C7F3027009A0407 /* FDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91B31C7F3027009A0407 /* FDUser.m */; };
+		EF7A91B71C7F37B6009A0407 /* FDFeedsDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91B61C7F37B6009A0407 /* FDFeedsDetailViewModel.m */; };
+		EF7A91BB1C7F41D7009A0407 /* FDImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91BA1C7F41D7009A0407 /* FDImageViewerController.m */; };
 		EFAAC6DE1C7D8C9F00369344 /* Main_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */; };
 		EFAAC6DF1C7D8C9F00369344 /* Main_Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */; };
 		EFAAC6E41C7D981400369344 /* Welcome_Sina@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */; };
@@ -97,6 +104,20 @@
 		EF7A919B1C7EDA4F009A0407 /* Main_Loading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Loading@3x.png"; path = "Arts/Main_Loading@3x.png"; sourceTree = "<group>"; };
 		EF7A919F1C7EE652009A0407 /* UISegmentedControl+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+Helper.h"; sourceTree = "<group>"; };
 		EF7A91A01C7EE652009A0407 /* UISegmentedControl+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+Helper.m"; sourceTree = "<group>"; };
+		EF7A91A31C7EFD14009A0407 /* FDFeedsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsDetailViewController.h; sourceTree = "<group>"; };
+		EF7A91A41C7EFD14009A0407 /* FDFeedsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsDetailViewController.m; sourceTree = "<group>"; };
+		EF7A91A61C7EFE83009A0407 /* FDFeedsDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsDetailCell.h; sourceTree = "<group>"; };
+		EF7A91A71C7EFE83009A0407 /* FDFeedsDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsDetailCell.m; sourceTree = "<group>"; };
+		EF7A91AC1C7F2F25009A0407 /* FDFeedsDetailCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsDetailCommentCell.h; sourceTree = "<group>"; };
+		EF7A91AD1C7F2F25009A0407 /* FDFeedsDetailCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsDetailCommentCell.m; sourceTree = "<group>"; };
+		EF7A91AF1C7F2FE6009A0407 /* FDComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDComment.h; sourceTree = "<group>"; };
+		EF7A91B01C7F2FE6009A0407 /* FDComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDComment.m; sourceTree = "<group>"; };
+		EF7A91B21C7F3027009A0407 /* FDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUser.h; sourceTree = "<group>"; };
+		EF7A91B31C7F3027009A0407 /* FDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUser.m; sourceTree = "<group>"; };
+		EF7A91B51C7F37B6009A0407 /* FDFeedsDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsDetailViewModel.h; sourceTree = "<group>"; };
+		EF7A91B61C7F37B6009A0407 /* FDFeedsDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsDetailViewModel.m; sourceTree = "<group>"; };
+		EF7A91B91C7F41D7009A0407 /* FDImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDImageViewerController.h; sourceTree = "<group>"; };
+		EF7A91BA1C7F41D7009A0407 /* FDImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDImageViewerController.m; sourceTree = "<group>"; };
 		EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Background@2x.png"; path = "Arts/Main_Background@2x.png"; sourceTree = "<group>"; };
 		EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Background@3x.png"; path = "Arts/Main_Background@3x.png"; sourceTree = "<group>"; };
 		EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_Sina@2x.png"; path = "Arts/Welcome_Sina@2x.png"; sourceTree = "<group>"; };
@@ -253,6 +274,30 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		EF7A91A21C7EFCF3009A0407 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A91A61C7EFE83009A0407 /* FDFeedsDetailCell.h */,
+				EF7A91A71C7EFE83009A0407 /* FDFeedsDetailCell.m */,
+				EF7A91B51C7F37B6009A0407 /* FDFeedsDetailViewModel.h */,
+				EF7A91B61C7F37B6009A0407 /* FDFeedsDetailViewModel.m */,
+				EF7A91AC1C7F2F25009A0407 /* FDFeedsDetailCommentCell.h */,
+				EF7A91AD1C7F2F25009A0407 /* FDFeedsDetailCommentCell.m */,
+				EF7A91A31C7EFD14009A0407 /* FDFeedsDetailViewController.h */,
+				EF7A91A41C7EFD14009A0407 /* FDFeedsDetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		EF7A91B81C7F413D009A0407 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A91B91C7F41D7009A0407 /* FDImageViewerController.h */,
+				EF7A91BA1C7F41D7009A0407 /* FDImageViewerController.m */,
+			);
+			name = ImageViewer;
+			sourceTree = "<group>";
+		};
 		EFAAC6E81C7D99F300369344 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,10 +419,14 @@
 		EFFC299A1C7A037F004D590C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A91B21C7F3027009A0407 /* FDUser.h */,
+				EF7A91B31C7F3027009A0407 /* FDUser.m */,
 				EFAAC6F71C7DA2C200369344 /* FDStar.h */,
 				EFAAC6F81C7DA2C200369344 /* FDStar.m */,
 				EFAAC6F41C7DA00600369344 /* FDFeed.h */,
 				EFAAC6F51C7DA00600369344 /* FDFeed.m */,
+				EF7A91AF1C7F2FE6009A0407 /* FDComment.h */,
+				EF7A91B01C7F2FE6009A0407 /* FDComment.m */,
 				EFFC29D91C7C4C26004D590C /* FDBaseModel.h */,
 				EFFC29DA1C7C4C26004D590C /* FDBaseModel.m */,
 			);
@@ -487,6 +536,7 @@
 		EFFC29CA1C7B0707004D590C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A91B81C7F413D009A0407 /* ImageViewer */,
 				EFAAC7011C7DE99800369344 /* DateFormatter */,
 				EFFC29F31C7C5340004D590C /* Alert */,
 				EFFC29EF1C7C530E004D590C /* Coding */,
@@ -545,6 +595,7 @@
 		EFFC2A051C7C5D97004D590C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A91A21C7EFCF3009A0407 /* Detail */,
 				EFAAC6E81C7D99F300369344 /* Feeds */,
 				EFFC2A061C7C5E2D004D590C /* Login */,
 			);
@@ -754,6 +805,7 @@
 				EFAAC7001C7DE7E900369344 /* FDDateFormatter.m in Sources */,
 				EFAAC6F91C7DA2C200369344 /* FDStar.m in Sources */,
 				EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */,
+				EF7A91B11C7F2FE6009A0407 /* FDComment.m in Sources */,
 				EFFC29FC1C7C557D004D590C /* FDTextLabelCell.m in Sources */,
 				EFFC29AC1C7A08CD004D590C /* FDBaseViewModel.m in Sources */,
 				EFAAC6EB1C7D9A0E00369344 /* FDFeedsViewController.m in Sources */,
@@ -765,6 +817,7 @@
 				EF7A91961C7ECE8A009A0407 /* FDFeedsViewModel.m in Sources */,
 				EFFC29E41C7C50A2004D590C /* UITextField+Helper.m in Sources */,
 				EFAAC6EE1C7D9A6300369344 /* FDFeedsCell.m in Sources */,
+				EF7A91BB1C7F41D7009A0407 /* FDImageViewerController.m in Sources */,
 				EFFC2A0C1C7C785F004D590C /* FDTriangleView.m in Sources */,
 				EFFC2A091C7C5E4C004D590C /* FDWelcomeViewController.m in Sources */,
 				EFFC29E11C7C503A004D590C /* FDTextFieldCell.m in Sources */,
@@ -774,14 +827,17 @@
 				EFFC29C91C7B069C004D590C /* FDTabButton.m in Sources */,
 				EFAAC6F61C7DA00600369344 /* FDFeed.m in Sources */,
 				EFFC29F21C7C5319004D590C /* FDCoding.m in Sources */,
+				EF7A91A51C7EFD14009A0407 /* FDFeedsDetailViewController.m in Sources */,
 				EFFC29EA1C7C525A004D590C /* UIWindow+Helper.m in Sources */,
 				EFFC29D21C7C436B004D590C /* UIView+Helper.m in Sources */,
+				EF7A91AE1C7F2F25009A0407 /* FDFeedsDetailCommentCell.m in Sources */,
 				EFFC29C11C7AF52F004D590C /* FDAccountService.m in Sources */,
 				EFFC29C61C7B04DB004D590C /* FDTabBarController.m in Sources */,
 				EFFC29AF1C7A08F2004D590C /* FDBaseCell.m in Sources */,
 				EFFC29EE1C7C52EE004D590C /* FDValidater.m in Sources */,
 				EFFC29CE1C7B0739004D590C /* UILabel+Helper.m in Sources */,
 				EFFC29E71C7C5223004D590C /* NSAttributedString+Helper.m in Sources */,
+				EF7A91B41C7F3027009A0407 /* FDUser.m in Sources */,
 				EFFC29BC1C7AEC7E004D590C /* FDWebService.m in Sources */,
 				EFFC29F61C7C534D004D590C /* FDAlert.m in Sources */,
 				EFFC29FF1C7C5617004D590C /* FDBaseStaticCellController.m in Sources */,
@@ -790,6 +846,8 @@
 				EF7A91A11C7EE652009A0407 /* UISegmentedControl+Helper.m in Sources */,
 				EFFC29D81C7C4A56004D590C /* FDRefreshHeader.m in Sources */,
 				EFFC29811C79FEC1004D590C /* main.m in Sources */,
+				EF7A91B71C7F37B6009A0407 /* FDFeedsDetailViewModel.m in Sources */,
+				EF7A91A81C7EFE83009A0407 /* FDFeedsDetailCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

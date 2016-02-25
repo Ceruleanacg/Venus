@@ -4,6 +4,8 @@
 <dict>
 	<key>MODEL_MAP</key>
 	<dict>
+		<key>star/news/comment</key>
+		<string>FDComment</string>
 		<key>star/news</key>
 		<string>FDFeed</string>
 	</dict>
