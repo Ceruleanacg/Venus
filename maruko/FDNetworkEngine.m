@@ -71,7 +71,10 @@ static FDNetworkEngine *_engine;
     BOOL isReachable = [self networkReachable];
     
     if (!isReachable) {
-        return;
+        
+        NSError *error = [NSError errorWithDomain:@"没有网络连接" code:-1 userInfo:nil];
+        
+        return callback(nil, error);
     }
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -178,6 +181,10 @@ static FDNetworkEngine *_engine;
                     results = [NSArray new];
                 }
                 
+                if (!results.count) {
+                    return callback(nil, nil);
+                }
+                
                 objects = [[MTLJSONAdapter modelsOfClass:modelClass fromJSONArray:results error:&modelError] mutableCopy];
                 
                 DLogError(modelError)
@@ -212,7 +219,7 @@ static FDNetworkEngine *_engine;
 #pragma mark - Helper Method
 
 - (BOOL)networkReachable {
-    return [[AFNetworkReachabilityManager sharedManager] isReachable];
+    return [[AFNetworkReachabilityManager sharedManager] isReachable] || [[AFNetworkReachabilityManager sharedManager] networkReachabilityStatus] == AFNetworkReachabilityStatusUnknown;
 }
 
 - (void)dismissModalController {

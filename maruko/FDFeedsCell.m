@@ -14,9 +14,10 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.line.hidden = YES;
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        _topSpaceView = [UIView new];
-        _topSpaceView.backgroundColor = ColorTableSection;
+        _bottomSpaceView = [UIView new];
+        _bottomSpaceView.backgroundColor = ColorTableSection;
         
         _avatarIcon  = [[UIImageView alloc] init];
         _avatarIcon.layer.masksToBounds = YES;
@@ -33,12 +34,14 @@
         _titleLabel.numberOfLines = 0;
         
         _feedImageView = [[UIImageView alloc] init];
+        _feedImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _feedImageView.clipsToBounds = YES;
+        _feedImageView.layer.cornerRadius = 5.0;
         
         _infoLabel = [UILabel labelWithText:@"" Color:ColorFeedInfo FontSize:12 Alignment:NSTextAlignmentLeft Light:YES];
         
         _favoIcon = [[UIImageView alloc] initWithImage:FDImageWithName(@"Feeds_Collect")];
         
-        [self.contentView addSubview:_topSpaceView];
         [self.contentView addSubview:_avatarIcon];
         [self.contentView addSubview:_nameLabel];
         [self.contentView addSubview:_sourceLabel];
@@ -47,14 +50,10 @@
         [self.contentView addSubview:_feedImageView];
         [self.contentView addSubview:_infoLabel];
         [self.contentView addSubview:_favoIcon];
-        
-        [_topSpaceView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.equalTo(@0);
-            make.height.equalTo(@10);
-        }];
+        [self.contentView addSubview:_bottomSpaceView];
         
         [_avatarIcon mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_topSpaceView.mas_bottom).offset(5);
+            make.top.equalTo(@5);
             make.left.equalTo(@10);
             make.size.mas_equalTo(CGSizeMake(30, 30));
         }];
@@ -97,7 +96,12 @@
         [_infoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(_titleLabel);
             make.top.equalTo(_feedImageView.mas_bottom).offset(10);
-            make.bottom.equalTo(@(-5));
+        }];
+        
+        [_bottomSpaceView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(_infoLabel.mas_bottom).offset(5);
+            make.left.right.bottom.equalTo(@0);
+            make.height.equalTo(@10);
         }];
     }
     
@@ -137,14 +141,16 @@
         NSString *targetURL = nil;
         
         for (NSString *imageURL in feed.imageURLs) {
-            if ([imageURL containsString:@"middle"]) {
+            if ([imageURL containsString:@"bmiddle"]) {
                 targetURL = imageURL;
             }
         }
         
-        if (targetURL) {
-            [_feedImageView sd_setImageWithURL:[NSURL URLWithString:[feed.imageURLs firstObject]] placeholderImage:[UIImage new]];
+        if (!targetURL) {
+            targetURL = [feed.imageURLs firstObject];
         }
+        
+        [_feedImageView sd_setImageWithURL:[NSURL URLWithString:targetURL] placeholderImage:[UIImage new]];
     }
     
     _infoLabel.text = [NSString stringWithFormat:@"%ld阅读 · %ld评论", feed.readCount, feed.commentCount];

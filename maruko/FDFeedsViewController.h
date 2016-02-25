@@ -7,8 +7,9 @@
 //
 
 #import "FDBaseTableViewController.h"
+#import "FDFeedsViewModel.h"
 #import "FDFeedsCell.h"
 
-@interface FDFeedsController : FDBaseTableViewController
+@interface FDFeedsViewController : FDBaseTableViewController
 
 @end

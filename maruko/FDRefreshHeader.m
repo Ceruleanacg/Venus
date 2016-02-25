@@ -18,7 +18,7 @@
     
     self.mj_h = 50;
     
-    _circle = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Main_Refresh"]];
+    _circle = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Main_Loading"]];
     
     _circleContentView = [UIView new];
     
@@ -54,8 +54,8 @@
 
 - (void)beginRefreshing {
     
-    [UIView animateWithDuration:0.25 animations:^{
-        self.pullingPercent = 0.0;
+    [UIView animateWithDuration:1 animations:^{
+        _circle.transform = CGAffineTransformMakeRotation(2 * M_PI);
     }];
     
     if (self.window) {

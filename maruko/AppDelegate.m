@@ -12,7 +12,7 @@
 
 #import "FDTabBarController.h"
 #import "FDWelcomeViewController.h"
-#import "FDFeedsController.h"
+#import "FDFeedsViewController.h"
 
 #import "FDAccountService.h"
 
@@ -31,8 +31,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    FDFeedsController *feedsViewController = [[FDFeedsController alloc] init];
-    feedsViewController.viewModel = [[FDBaseViewModel alloc] initWithAPI:@"star/news" CellClass:[FDFeedsCell class]];
+    FDFeedsViewController *feedsViewController = [[FDFeedsViewController alloc] init];
+    feedsViewController.viewModel = [[FDFeedsViewModel alloc] initWithAPI:@"star/news"];
     
     FDNavigationController *feedsNavigationController = [[FDNavigationController alloc] initWithRootViewController:feedsViewController];
     
@@ -68,6 +68,8 @@
                                                                                                  FDImageWithName(@"Tab_Find_Selected"),
                                                                                                  FDImageWithName(@"Tab_Follow_Selected"),
                                                                                                  FDImageWithName(@"Tab_Me_Selected")]];
+    tabBarController.tabBar.alpha = 0.95;
+    
     [self.window setRootViewController:tabBarController];
     [self.window makeKeyAndVisible];
     

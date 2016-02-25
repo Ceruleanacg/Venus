@@ -9,6 +9,7 @@
 #ifndef CategorySheet_h
 #define CategorySheet_h
 
+#import "UISegmentedControl+Helper.h"
 #import "NSAttributedString+Helper.h"
 #import "UITextField+Helper.h"
 #import "UIWindow+Helper.h"

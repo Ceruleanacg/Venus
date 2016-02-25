@@ -12,6 +12,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
+             @"objectID"   : @"_id",
              @"name"       : @"name",
              @"avatarURL"  : @"avatar_url",
              @"weiboURL"   : @"weibo_url",

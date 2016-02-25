@@ -32,7 +32,7 @@
 
 #define ColorFeedName               [UIColor colorWithHex:0x474747]
 #define ColorFeedSource             [UIColor colorWithHex:0x9B9B9B]
-#define ColorFeedLine               [UIColor colorWithHex:0xE1E1E1]
+#define ColorFeedLine               [UIColor colorWithHex:0xF4F4F4]
 #define ColorFeedTitle              [UIColor colorWithHex:0x474747]
 #define ColorFeedInfo               [UIColor colorWithHex:0x9B9B9B]
 

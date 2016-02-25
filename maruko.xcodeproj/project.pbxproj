@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF7A91961C7ECE8A009A0407 /* FDFeedsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */; };
+		EF7A91991C7ED103009A0407 /* FDFeedsTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91981C7ED103009A0407 /* FDFeedsTextCell.m */; };
+		EF7A919C1C7EDA4F009A0407 /* Main_Loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7A919A1C7EDA4F009A0407 /* Main_Loading@2x.png */; };
+		EF7A919D1C7EDA4F009A0407 /* Main_Loading@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7A919B1C7EDA4F009A0407 /* Main_Loading@3x.png */; };
+		EF7A91A11C7EE652009A0407 /* UISegmentedControl+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91A01C7EE652009A0407 /* UISegmentedControl+Helper.m */; };
 		EFAAC6DE1C7D8C9F00369344 /* Main_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */; };
 		EFAAC6DF1C7D8C9F00369344 /* Main_Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */; };
 		EFAAC6E41C7D981400369344 /* Welcome_Sina@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */; };
 		EFAAC6E51C7D981400369344 /* Welcome_Sina@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E11C7D981400369344 /* Welcome_Sina@3x.png */; };
 		EFAAC6E61C7D981400369344 /* Welcome_WeChat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E21C7D981400369344 /* Welcome_WeChat@2x.png */; };
 		EFAAC6E71C7D981400369344 /* Welcome_WeChat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6E31C7D981400369344 /* Welcome_WeChat@3x.png */; };
-		EFAAC6EB1C7D9A0E00369344 /* FDFeedsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6EA1C7D9A0E00369344 /* FDFeedsController.m */; };
+		EFAAC6EB1C7D9A0E00369344 /* FDFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6EA1C7D9A0E00369344 /* FDFeedsViewController.m */; };
 		EFAAC6EE1C7D9A6300369344 /* FDFeedsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAAC6ED1C7D9A6300369344 /* FDFeedsCell.m */; };
 		EFAAC6F21C7D9DB300369344 /* Feeds_Collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6F01C7D9DB300369344 /* Feeds_Collect@2x.png */; };
 		EFAAC6F31C7D9DB300369344 /* Feeds_Collect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAC6F11C7D9DB300369344 /* Feeds_Collect@3x.png */; };
@@ -84,14 +89,22 @@
 		1B14442592AB4D2EA4140032 /* libPods-maruko.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maruko.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0F877780EC1E182FBB67DE /* Pods-maruko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maruko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maruko/Pods-maruko.debug.xcconfig"; sourceTree = "<group>"; };
 		AC95B59801ECEDC0D4903A61 /* Pods-maruko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maruko.release.xcconfig"; path = "Pods/Target Support Files/Pods-maruko/Pods-maruko.release.xcconfig"; sourceTree = "<group>"; };
+		EF7A91941C7ECE8A009A0407 /* FDFeedsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsViewModel.h; sourceTree = "<group>"; };
+		EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsViewModel.m; sourceTree = "<group>"; };
+		EF7A91971C7ED103009A0407 /* FDFeedsTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsTextCell.h; sourceTree = "<group>"; };
+		EF7A91981C7ED103009A0407 /* FDFeedsTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsTextCell.m; sourceTree = "<group>"; };
+		EF7A919A1C7EDA4F009A0407 /* Main_Loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Loading@2x.png"; path = "Arts/Main_Loading@2x.png"; sourceTree = "<group>"; };
+		EF7A919B1C7EDA4F009A0407 /* Main_Loading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Loading@3x.png"; path = "Arts/Main_Loading@3x.png"; sourceTree = "<group>"; };
+		EF7A919F1C7EE652009A0407 /* UISegmentedControl+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+Helper.h"; sourceTree = "<group>"; };
+		EF7A91A01C7EE652009A0407 /* UISegmentedControl+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+Helper.m"; sourceTree = "<group>"; };
 		EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Background@2x.png"; path = "Arts/Main_Background@2x.png"; sourceTree = "<group>"; };
 		EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main_Background@3x.png"; path = "Arts/Main_Background@3x.png"; sourceTree = "<group>"; };
 		EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_Sina@2x.png"; path = "Arts/Welcome_Sina@2x.png"; sourceTree = "<group>"; };
 		EFAAC6E11C7D981400369344 /* Welcome_Sina@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_Sina@3x.png"; path = "Arts/Welcome_Sina@3x.png"; sourceTree = "<group>"; };
 		EFAAC6E21C7D981400369344 /* Welcome_WeChat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_WeChat@2x.png"; path = "Arts/Welcome_WeChat@2x.png"; sourceTree = "<group>"; };
 		EFAAC6E31C7D981400369344 /* Welcome_WeChat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome_WeChat@3x.png"; path = "Arts/Welcome_WeChat@3x.png"; sourceTree = "<group>"; };
-		EFAAC6E91C7D9A0E00369344 /* FDFeedsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsController.h; sourceTree = "<group>"; };
-		EFAAC6EA1C7D9A0E00369344 /* FDFeedsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsController.m; sourceTree = "<group>"; };
+		EFAAC6E91C7D9A0E00369344 /* FDFeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsViewController.h; sourceTree = "<group>"; };
+		EFAAC6EA1C7D9A0E00369344 /* FDFeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsViewController.m; sourceTree = "<group>"; };
 		EFAAC6EC1C7D9A6300369344 /* FDFeedsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsCell.h; sourceTree = "<group>"; };
 		EFAAC6ED1C7D9A6300369344 /* FDFeedsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsCell.m; sourceTree = "<group>"; };
 		EFAAC6F01C7D9DB300369344 /* Feeds_Collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Collect@2x.png"; path = "Arts/Feeds_Collect@2x.png"; sourceTree = "<group>"; };
@@ -229,13 +242,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF7A919E1C7EDA52009A0407 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A919A1C7EDA4F009A0407 /* Main_Loading@2x.png */,
+				EF7A919B1C7EDA4F009A0407 /* Main_Loading@3x.png */,
+				EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */,
+				EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		EFAAC6E81C7D99F300369344 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
 				EFAAC6EC1C7D9A6300369344 /* FDFeedsCell.h */,
 				EFAAC6ED1C7D9A6300369344 /* FDFeedsCell.m */,
-				EFAAC6E91C7D9A0E00369344 /* FDFeedsController.h */,
-				EFAAC6EA1C7D9A0E00369344 /* FDFeedsController.m */,
+				EF7A91971C7ED103009A0407 /* FDFeedsTextCell.h */,
+				EF7A91981C7ED103009A0407 /* FDFeedsTextCell.m */,
+				EF7A91941C7ECE8A009A0407 /* FDFeedsViewModel.h */,
+				EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */,
+				EFAAC6E91C7D9A0E00369344 /* FDFeedsViewController.h */,
+				EFAAC6EA1C7D9A0E00369344 /* FDFeedsViewController.m */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -324,6 +352,7 @@
 		EFFC29981C7A0358004D590C /* Arts */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A919E1C7EDA52009A0407 /* Main */,
 				EFAAC6EF1C7D9DAC00369344 /* Feeds */,
 				EFFC2A101C7C8C58004D590C /* TabBar */,
 				EFFC2A0F1C7C8160004D590C /* Welcome */,
@@ -480,6 +509,8 @@
 				EFFC29E31C7C50A2004D590C /* UITextField+Helper.m */,
 				EFFC29E51C7C5223004D590C /* NSAttributedString+Helper.h */,
 				EFFC29E61C7C5223004D590C /* NSAttributedString+Helper.m */,
+				EF7A919F1C7EE652009A0407 /* UISegmentedControl+Helper.h */,
+				EF7A91A01C7EE652009A0407 /* UISegmentedControl+Helper.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -546,8 +577,6 @@
 		EFFC2A0F1C7C8160004D590C /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				EFAAC6DC1C7D8C9F00369344 /* Main_Background@2x.png */,
-				EFAAC6DD1C7D8C9F00369344 /* Main_Background@3x.png */,
 				EFAAC6E01C7D981400369344 /* Welcome_Sina@2x.png */,
 				EFAAC6E11C7D981400369344 /* Welcome_Sina@3x.png */,
 				EFAAC6E21C7D981400369344 /* Welcome_WeChat@2x.png */,
@@ -670,9 +699,11 @@
 				EFFC29B61C7AE39B004D590C /* api.plist in Resources */,
 				EFFC298C1C79FEC1004D590C /* Assets.xcassets in Resources */,
 				EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */,
+				EF7A919C1C7EDA4F009A0407 /* Main_Loading@2x.png in Resources */,
 				EFFC2A341C7C8C64004D590C /* Tab_Find_Selected@3x.png in Resources */,
 				EFFC2A371C7C8C64004D590C /* Tab_Me@2x.png in Resources */,
 				EFAAC6DF1C7D8C9F00369344 /* Main_Background@3x.png in Resources */,
+				EF7A919D1C7EDA4F009A0407 /* Main_Loading@3x.png in Resources */,
 				EFFC2A2D1C7C8C64004D590C /* Tab_Day_Selected@3x.png in Resources */,
 				EFFC2A2F1C7C8C64004D590C /* Tab_Follow@3x.png in Resources */,
 				EFAAC6F31C7D9DB300369344 /* Feeds_Collect@3x.png in Resources */,
@@ -725,11 +756,13 @@
 				EFFC29A91C7A0888004D590C /* FDNavigationController.m in Sources */,
 				EFFC29FC1C7C557D004D590C /* FDTextLabelCell.m in Sources */,
 				EFFC29AC1C7A08CD004D590C /* FDBaseViewModel.m in Sources */,
-				EFAAC6EB1C7D9A0E00369344 /* FDFeedsController.m in Sources */,
+				EFAAC6EB1C7D9A0E00369344 /* FDFeedsViewController.m in Sources */,
+				EF7A91991C7ED103009A0407 /* FDFeedsTextCell.m in Sources */,
 				EFFC29F91C7C53D2004D590C /* FDBaseCollectionViewController.m in Sources */,
 				EFFC29DE1C7C4EC8004D590C /* FDBaseCollectionCell.m in Sources */,
 				EFFC29D51C7C4967004D590C /* FDBaseTableViewController.m in Sources */,
 				EFFC29A11C7A0482004D590C /* FDBaseViewController.m in Sources */,
+				EF7A91961C7ECE8A009A0407 /* FDFeedsViewModel.m in Sources */,
 				EFFC29E41C7C50A2004D590C /* UITextField+Helper.m in Sources */,
 				EFAAC6EE1C7D9A6300369344 /* FDFeedsCell.m in Sources */,
 				EFFC2A0C1C7C785F004D590C /* FDTriangleView.m in Sources */,
@@ -754,6 +787,7 @@
 				EFFC29FF1C7C5617004D590C /* FDBaseStaticCellController.m in Sources */,
 				EFFC29B31C7ADD37004D590C /* FDNetworkEngine.m in Sources */,
 				EFFC2A021C7C56F3004D590C /* FDButton.m in Sources */,
+				EF7A91A11C7EE652009A0407 /* UISegmentedControl+Helper.m in Sources */,
 				EFFC29D81C7C4A56004D590C /* FDRefreshHeader.m in Sources */,
 				EFFC29811C79FEC1004D590C /* main.m in Sources */,
 			);

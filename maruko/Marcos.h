@@ -13,6 +13,8 @@
 
 #define StrongSelf __strong typeof(w_self) s_self = w_self
 
+#define SStrongSelf  __strong typeof(w_self) ss_self = w_self;
+
 #define DLogError(__ERROR__) if (__ERROR__) { NSLog(@"%@", __ERROR__); }
 
 #define FDImageWithName(__IMAGE_NAME__) [UIImage imageNamed:__IMAGE_NAME__]

@@ -12,6 +12,6 @@
 	<key>RELEASE_HOST</key>
 	<string></string>
 	<key>DEBUG_HOST</key>
-	<string>localhost:8000</string>
+	<string>192.168.1.101:8000</string>
 </dict>
 </plist>
