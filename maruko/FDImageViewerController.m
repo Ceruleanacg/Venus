@@ -8,23 +8,24 @@
 
 #import "FDImageViewerController.h"
 
+static FDImageViewerController *imageViewerController = nil;
+
 @implementation FDImageViewerController
 
-+ (void)previewImage:(UIImage *)image {
-    FDImageViewerController *viewerController = [[self alloc] init];
-    viewerController.image = image;
++ (void)previewWithContentView:(UIView *)contentView Image:(UIImage *)image {
     
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    
-    UIViewController *presentedViewController = nil;
-    
-    if ([[window rootViewController] presentedViewController]) {
-        presentedViewController = [[window rootViewController] presentedViewController];
-    } else {
-        presentedViewController = [window rootViewController];
+    if (!imageViewerController) {
+        imageViewerController = [[self alloc] init];
     }
     
-    [presentedViewController presentViewController:viewerController animated:YES completion:nil];
+    imageViewerController.image = image;
+    imageViewerController.contentView = contentView;
+    
+    [UIView transitionFromView:imageViewerController.contentView
+                        toView:imageViewerController.view
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    completion:nil];
 }
 
 - (void)viewDidLoad {
@@ -40,7 +41,11 @@
     _imageView.userInteractionEnabled = YES;
     _imageView.tapAction = ^(UIView *view) {
         StrongSelf;
-        [s_self dismissViewControllerAnimated:YES completion:nil];
+        [UIView transitionFromView:s_self.view
+                            toView:s_self.contentView
+                          duration:1.0
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        completion:nil];
     };
     
     _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
@@ -53,6 +58,12 @@
     
     [self.view addSubview:_scrollView];
 }
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
+#pragma mark - UIScrollViewDelegate
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return _imageView;

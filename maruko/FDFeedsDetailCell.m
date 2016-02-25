@@ -53,7 +53,7 @@
             imageView.layer.cornerRadius = 5.0;
             imageView.userInteractionEnabled = YES;
             imageView.tapAction = ^(UIView *view) {
-                [FDImageViewerController previewImage:[(UIImageView *)view image]];
+                [FDImageViewerController previewWithContentView:self.tableView Image:[(UIImageView *)view image]];
             };
             
             [imageView sd_setImageWithURL:[NSURL URLWithString:imageURL] placeholderImage:[UIImage new]];
