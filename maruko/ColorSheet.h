@@ -37,5 +37,11 @@
 #define ColorFeedContent            [UIColor colorWithHex:0x474747]
 #define ColorFeedInfo               [UIColor colorWithHex:0x9B9B9B]
 
+#define ColorTextContent            [UIColor colorWithHex:0x474747]
+
+#define ColorCommentName            [UIColor colorWithHex:0x9B9B9B]
+#define ColorCommentContent         [UIColor colorWithHex:0x474747]
+#define ColorCommentDate            [UIColor colorWithHex:0x9B9B9B]
+
 
 #endif /* ColorSheet_h */

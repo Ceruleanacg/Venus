@@ -15,6 +15,7 @@
              @"objectID"    : @"_id",
              @"username"    : @"username",
              @"nickname"    : @"nickname",
+             @"avatarURL"   : @"avatar_url",
              @"sex"         : @"sex",
              @"age"         : @"age",
              };

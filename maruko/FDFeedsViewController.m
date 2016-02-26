@@ -78,6 +78,7 @@
     
     FDFeedsDetailViewModel *viewModel = [[FDFeedsDetailViewModel alloc] initWithAPI:@"star/news/comment" CellClass:[FDFeedsDetailCommentCell class]];
     viewModel.feed = feed;
+    viewModel.prams[@"news_id"] = feed.objectID;
     
     FDFeedsDetailViewController *feedsDetailViewController = [FDFeedsDetailViewController new];
     feedsDetailViewController.viewModel = viewModel;

@@ -19,6 +19,8 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, strong) NSString *nickname;
 
+@property (nonatomic, strong) NSString *avatarURL;
+
 @property (nonatomic, assign) FDSex sex;
 
 @property (nonatomic, assign) NSInteger age;

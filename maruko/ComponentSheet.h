@@ -12,6 +12,7 @@
 #import "FDButton.h"
 
 #import "FDDateFormatter.h"
+#import "FDBarButtonItem.h"
 #import "FDValidater.h"
 #import "FDCoding.h"
 #import "FDAlert.h"

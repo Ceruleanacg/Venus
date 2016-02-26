@@ -18,6 +18,6 @@
 
 - (void)pushViewController:(Class)viewControllerClass ViewModel:(FDBaseViewModel *)viewModel animated:(BOOL)animated;
 
-- (void)showTabBar;
+- (void)showTabBarIfNeed;
 
 @end

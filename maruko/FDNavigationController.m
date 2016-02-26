@@ -34,7 +34,7 @@
     [super pushViewController:viewController animated:YES];
 }
 
-- (void)showTabBar {
+- (void)showTabBarIfNeed {
     if (self.fd_tabBarController && self.viewControllers.count == 1) {
         [UIView animateWithDuration:0.2 animations:^{
             self.fd_tabBarController.tabBar.alpha = 1.0;
