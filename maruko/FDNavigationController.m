@@ -34,15 +34,12 @@
     [super pushViewController:viewController animated:YES];
 }
 
-- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
-    
-    if (self.fd_tabBarController && self.viewControllers.count == 2) {
+- (void)showTabBar {
+    if (self.fd_tabBarController && self.viewControllers.count == 1) {
         [UIView animateWithDuration:0.2 animations:^{
             self.fd_tabBarController.tabBar.alpha = 1.0;
         }];
     }
-    
-    return [super popViewControllerAnimated:animated];
 }
 
 @end

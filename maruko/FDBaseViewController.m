@@ -19,14 +19,21 @@
     
     if ([self.navigationController.viewControllers count] > 1) {
         leftItem = [FDBarButtonItem itemWithTitle:@"返回" Color:ColorNormalNaviTitle Target:self Action:@selector((goBack))];
-        
-        self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-        
     } else {
         if (self.presentingViewController) {
             leftItem = [FDBarButtonItem itemWithTitle:@"返回" Color:ColorNormalNaviTitle Target:self Action:@selector((dismiss))];
         }
     }
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    
+    id<UIGestureRecognizerDelegate> target = self.navigationController.interactivePopGestureRecognizer.delegate;
+    
+    self.backGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:target action:NSSelectorFromString(@"handleNavigationTransition:")];
+    self.backGestureRecognizer.delegate = self;
+    
+    [self.view addGestureRecognizer:self.backGestureRecognizer];
+    [self.view setUserInteractionEnabled:YES];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -37,6 +44,14 @@
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if ([self.navigationController isKindOfClass:[FDNavigationController class]]) {
+        [(FDNavigationController *)self.navigationController showTabBar];
+    }
+}
+
 - (void)goBack {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -44,4 +59,9 @@
 - (void)dismiss {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return self.navigationController.viewControllers.count == 1 ? NO : YES;
+}
+
 @end

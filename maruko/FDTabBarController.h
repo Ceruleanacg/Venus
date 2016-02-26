@@ -9,6 +9,8 @@
 #import "FDBaseViewController.h"
 #import "FDTabButton.h"
 
+@class FDNavigationController;
+
 @interface FDTabBarController : FDBaseViewController
 
 @property (nonatomic, strong) UIView *tabBar;

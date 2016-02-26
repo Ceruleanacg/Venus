@@ -18,7 +18,9 @@
 #import "ColorSheet.h"
 #import "Marcos.h"
 
-@interface FDBaseViewController : UIViewController
+@interface FDBaseViewController : UIViewController <UIGestureRecognizerDelegate>
+
+@property (nonatomic, strong) UIPanGestureRecognizer *backGestureRecognizer;
 
 @property (nonatomic, strong) FDBaseViewModel *viewModel;
 
