@@ -35,7 +35,7 @@
         if (type == FDFeedTypeNews) {
             _articleLabel = [UILabel labelWithText:feed.article.length ? feed.article : @"没有正文"
                                              Color:ColorFeedContent
-                                          FontSize:14
+                                          FontSize:16
                                          Alignment:NSTextAlignmentLeft Light:YES];
             _articleLabel.numberOfLines = 0;
         }

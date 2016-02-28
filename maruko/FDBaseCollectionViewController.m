@@ -29,7 +29,7 @@
     _collectionView.contentInset    = UIEdgeInsetsMake(0, 0, STATUS_HEIGHT + TABBAR_HEIGHT + COMMON_HEIGHT, 0);
     _collectionView.backgroundColor = ColorNormalBGWhite;
     
-    [_collectionView registerClass:self.viewModel.cellClass forCellWithReuseIdentifier:self.viewModel.reuseIdentifer];
+    [_collectionView registerClass:self.viewModel.cellClass forCellWithReuseIdentifier:NSStringFromClass(self.viewModel.cellClass)];
     
     [self.view addSubview:_collectionView];
     

@@ -11,6 +11,11 @@
 		EF37E35C1C80A3B8001630E0 /* FDStarService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF37E35B1C80A3B8001630E0 /* FDStarService.m */; };
 		EF37E3621C8184E9001630E0 /* Feeds_Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF37E3601C8184E9001630E0 /* Feeds_Placeholder@2x.png */; };
 		EF37E3631C8184E9001630E0 /* Feeds_Placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF37E3611C8184E9001630E0 /* Feeds_Placeholder@3x.png */; };
+		EF37E36A1C83118C001630E0 /* FDUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF37E3691C83118C001630E0 /* FDUserViewController.m */; };
+		EF37E36D1C831330001630E0 /* FDUserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF37E36C1C831330001630E0 /* FDUserHeaderCell.m */; };
+		EF37E3711C83154B001630E0 /* Star_Avatar_Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF37E36F1C83154B001630E0 /* Star_Avatar_Placeholder@2x.png */; };
+		EF37E3721C83154B001630E0 /* Star_Avatar_Placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF37E3701C83154B001630E0 /* Star_Avatar_Placeholder@3x.png */; };
+		EF37E3751C8318AE001630E0 /* FDUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF37E3741C8318AE001630E0 /* FDUserViewModel.m */; };
 		EF7A91961C7ECE8A009A0407 /* FDFeedsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */; };
 		EF7A91991C7ED103009A0407 /* FDFeedsTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91981C7ED103009A0407 /* FDFeedsTextCell.m */; };
 		EF7A919C1C7EDA4F009A0407 /* Main_Loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7A919A1C7EDA4F009A0407 /* Main_Loading@2x.png */; };
@@ -106,6 +111,14 @@
 		EF37E35B1C80A3B8001630E0 /* FDStarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStarService.m; sourceTree = "<group>"; };
 		EF37E3601C8184E9001630E0 /* Feeds_Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Placeholder@2x.png"; path = "Arts/Feeds_Placeholder@2x.png"; sourceTree = "<group>"; };
 		EF37E3611C8184E9001630E0 /* Feeds_Placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Placeholder@3x.png"; path = "Arts/Feeds_Placeholder@3x.png"; sourceTree = "<group>"; };
+		EF37E3681C83118C001630E0 /* FDUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUserViewController.h; sourceTree = "<group>"; };
+		EF37E3691C83118C001630E0 /* FDUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUserViewController.m; sourceTree = "<group>"; };
+		EF37E36B1C831330001630E0 /* FDUserHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUserHeaderCell.h; sourceTree = "<group>"; };
+		EF37E36C1C831330001630E0 /* FDUserHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUserHeaderCell.m; sourceTree = "<group>"; };
+		EF37E36F1C83154B001630E0 /* Star_Avatar_Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Star_Avatar_Placeholder@2x.png"; path = "Arts/Star_Avatar_Placeholder@2x.png"; sourceTree = "<group>"; };
+		EF37E3701C83154B001630E0 /* Star_Avatar_Placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Star_Avatar_Placeholder@3x.png"; path = "Arts/Star_Avatar_Placeholder@3x.png"; sourceTree = "<group>"; };
+		EF37E3731C8318AE001630E0 /* FDUserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDUserViewModel.h; sourceTree = "<group>"; };
+		EF37E3741C8318AE001630E0 /* FDUserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDUserViewModel.m; sourceTree = "<group>"; };
 		EF7A91941C7ECE8A009A0407 /* FDFeedsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsViewModel.h; sourceTree = "<group>"; };
 		EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsViewModel.m; sourceTree = "<group>"; };
 		EF7A91971C7ED103009A0407 /* FDFeedsTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsTextCell.h; sourceTree = "<group>"; };
@@ -282,6 +295,28 @@
 			name = Star;
 			sourceTree = "<group>";
 		};
+		EF37E3671C83114B001630E0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EF37E3731C8318AE001630E0 /* FDUserViewModel.h */,
+				EF37E3741C8318AE001630E0 /* FDUserViewModel.m */,
+				EF37E36B1C831330001630E0 /* FDUserHeaderCell.h */,
+				EF37E36C1C831330001630E0 /* FDUserHeaderCell.m */,
+				EF37E3681C83118C001630E0 /* FDUserViewController.h */,
+				EF37E3691C83118C001630E0 /* FDUserViewController.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		EF37E36E1C831545001630E0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EF37E36F1C83154B001630E0 /* Star_Avatar_Placeholder@2x.png */,
+				EF37E3701C83154B001630E0 /* Star_Avatar_Placeholder@3x.png */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		EF7A919E1C7EDA52009A0407 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +453,7 @@
 		EFFC29981C7A0358004D590C /* Arts */ = {
 			isa = PBXGroup;
 			children = (
+				EF37E36E1C831545001630E0 /* User */,
 				EF7A919E1C7EDA52009A0407 /* Main */,
 				EFAAC6EF1C7D9DAC00369344 /* Feeds */,
 				EFFC2A101C7C8C58004D590C /* TabBar */,
@@ -619,6 +655,7 @@
 		EFFC2A051C7C5D97004D590C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EF37E3671C83114B001630E0 /* User */,
 				EF7A91A21C7EFCF3009A0407 /* Detail */,
 				EFAAC6E81C7D99F300369344 /* Feeds */,
 				EFFC2A061C7C5E2D004D590C /* Login */,
@@ -767,6 +804,7 @@
 				EFAAC6DE1C7D8C9F00369344 /* Main_Background@2x.png in Resources */,
 				EFAAC6FD1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png in Resources */,
 				EFAAC6E41C7D981400369344 /* Welcome_Sina@2x.png in Resources */,
+				EF37E3711C83154B001630E0 /* Star_Avatar_Placeholder@2x.png in Resources */,
 				EFFC2A251C7C8C64004D590C /* Tab_Day_Selected@2x.png in Resources */,
 				EFAAC6FC1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png in Resources */,
 				EFAAC6F21C7D9DB300369344 /* Feeds_Collect@2x.png in Resources */,
@@ -776,6 +814,7 @@
 				EFFC298A1C79FEC1004D590C /* Main.storyboard in Resources */,
 				EF7A919C1C7EDA4F009A0407 /* Main_Loading@2x.png in Resources */,
 				EFFC2A341C7C8C64004D590C /* Tab_Find_Selected@3x.png in Resources */,
+				EF37E3721C83154B001630E0 /* Star_Avatar_Placeholder@3x.png in Resources */,
 				EFFC2A371C7C8C64004D590C /* Tab_Me@2x.png in Resources */,
 				EFAAC6DF1C7D8C9F00369344 /* Main_Background@3x.png in Resources */,
 				EF7A919D1C7EDA4F009A0407 /* Main_Loading@3x.png in Resources */,
@@ -842,16 +881,19 @@
 				EFFC29A11C7A0482004D590C /* FDBaseViewController.m in Sources */,
 				EF7A91961C7ECE8A009A0407 /* FDFeedsViewModel.m in Sources */,
 				EFFC29E41C7C50A2004D590C /* UITextField+Helper.m in Sources */,
+				EF37E3751C8318AE001630E0 /* FDUserViewModel.m in Sources */,
 				EFAAC6EE1C7D9A6300369344 /* FDFeedsCell.m in Sources */,
 				EF37E35C1C80A3B8001630E0 /* FDStarService.m in Sources */,
 				EF7A91BB1C7F41D7009A0407 /* FDImageViewerController.m in Sources */,
 				EFFC2A0C1C7C785F004D590C /* FDTriangleView.m in Sources */,
 				EFFC2A091C7C5E4C004D590C /* FDWelcomeViewController.m in Sources */,
+				EF37E36A1C83118C001630E0 /* FDUserViewController.m in Sources */,
 				EFFC29E11C7C503A004D590C /* FDTextFieldCell.m in Sources */,
 				EFFC29841C79FEC1004D590C /* AppDelegate.m in Sources */,
 				EFFC29A41C7A0540004D590C /* FDBarButtonItem.m in Sources */,
 				EFFC29DB1C7C4C26004D590C /* FDBaseModel.m in Sources */,
 				EFFC29C91C7B069C004D590C /* FDTabButton.m in Sources */,
+				EF37E36D1C831330001630E0 /* FDUserHeaderCell.m in Sources */,
 				EFAAC6F61C7DA00600369344 /* FDFeed.m in Sources */,
 				EFFC29F21C7C5319004D590C /* FDCoding.m in Sources */,
 				EF7A91A51C7EFD14009A0407 /* FDFeedsDetailViewController.m in Sources */,

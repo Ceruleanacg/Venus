@@ -55,18 +55,18 @@
     FDTabBarController *tabBarController = [[FDTabBarController alloc] initWithViewControllers:@[feedsNavigationController,
                                                                                                  dayNavigationController,
                                                                                                  findNavigationController,
-                                                                                                 followNavigationController,
+//                                                                                                 followNavigationController,
                                                                                                  userNavigationController]
                                                                                         Titles:@[@"动态", @"行程", @"发现", @"关注", @"我的"]
                                                                                         Images:@[FDImageWithName(@"Tab_Feeds"),
                                                                                                  FDImageWithName(@"Tab_Day"),
                                                                                                  FDImageWithName(@"Tab_Find"),
-                                                                                                 FDImageWithName(@"Tab_Follow"),
+//                                                                                                 FDImageWithName(@"Tab_Follow"),
                                                                                                  FDImageWithName(@"Tab_Me")]
                                                                                 SelectedImages:@[FDImageWithName(@"Tab_Feeds_Selected"),
                                                                                                  FDImageWithName(@"Tab_Day_Selected"),
                                                                                                  FDImageWithName(@"Tab_Find_Selected"),
-                                                                                                 FDImageWithName(@"Tab_Follow_Selected"),
+//                                                                                                 FDImageWithName(@"Tab_Follow_Selected"),
                                                                                                  FDImageWithName(@"Tab_Me_Selected")]];
     tabBarController.tabBar.alpha = 0.95;
     

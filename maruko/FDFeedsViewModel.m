@@ -22,8 +22,6 @@
     
     self.cellClass = feed.imageURLs.count ? [FDFeedsCell class] : [FDFeedsTextCell class];
     
-    self.reuseIdentifer = NSStringFromClass(self.cellClass);
-    
     return [super tableView:tableView cellForRowAtIndexPath:indexPath];
 }
 

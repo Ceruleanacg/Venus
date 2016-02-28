@@ -27,8 +27,6 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, strong) Class cellClass;
 
-@property (nonatomic, strong) NSString *reuseIdentifer;
-
 @property (nonatomic, strong) NSMutableArray *objects;
 
 - (instancetype)initWithAPI:(NSString *)api;

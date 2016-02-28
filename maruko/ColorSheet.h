@@ -22,6 +22,7 @@
 #define ColorCellLine               [UIColor colorWithHex:0xE1E1E1]
 #define ColorCellText               [UIColor colorWithHex:0x474747]
 #define ColorCellPlaceholder        [UIColor colorWithHex:0x999999]
+#define ColorCellVecLine            [UIColor colorWithHex:0xD8D8D8]
 
 #define ColorTableSection           [UIColor colorWithHex:0xF7F7F7]
 

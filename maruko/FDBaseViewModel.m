@@ -26,7 +26,6 @@
 - (instancetype)initWithAPI:(NSString *)api CellClass:(Class)cellClass {
     if (self = [self initWithAPI:api]) {
         _cellClass      = cellClass;
-        _reuseIdentifer = @"ReuseIdentifier";
     }
     return self;
 }
@@ -97,10 +96,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    FDBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:_reuseIdentifer];
+    NSString *reuseIdentifer = NSStringFromClass(_cellClass);
+    
+    FDBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifer];
     
     if (!cell) {
-        cell = [[_cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:_reuseIdentifer];
+        cell = [[_cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifer];
         cell.tableView = tableView;
         cell.viewModel = self;
     }
@@ -122,7 +123,9 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    FDBaseCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_reuseIdentifer forIndexPath:indexPath];
+    NSString *reuseIdentifer = NSStringFromClass(_cellClass);
+    
+    FDBaseCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifer forIndexPath:indexPath];
     
     [cell bindWithModel:_objects[indexPath.row]];
     
