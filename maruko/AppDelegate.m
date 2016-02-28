@@ -13,6 +13,7 @@
 #import "FDTabBarController.h"
 #import "FDWelcomeViewController.h"
 #import "FDFeedsViewController.h"
+#import "FDUserViewController.h"
 
 #import "FDAccountService.h"
 
@@ -44,29 +45,23 @@
     
     FDNavigationController *findNavigationController = [[FDNavigationController alloc] initWithRootViewController:findViewController];
     
-    FDBaseViewController *followViewController = [[FDBaseViewController alloc] init];
-    
-    FDNavigationController *followNavigationController = [[FDNavigationController alloc] initWithRootViewController:followViewController];
-    
-    FDBaseViewController *userViewController = [[FDBaseViewController alloc] init];
+    FDUserViewController *userViewController = [[FDUserViewController alloc] init];
+    userViewController.viewModel = [[FDUserViewModel alloc] initWithAPI:@"account/favo"];
     
     FDNavigationController *userNavigationController = [[FDNavigationController alloc] initWithRootViewController:userViewController];
     
     FDTabBarController *tabBarController = [[FDTabBarController alloc] initWithViewControllers:@[feedsNavigationController,
                                                                                                  dayNavigationController,
                                                                                                  findNavigationController,
-//                                                                                                 followNavigationController,
                                                                                                  userNavigationController]
-                                                                                        Titles:@[@"动态", @"行程", @"发现", @"关注", @"我的"]
+                                                                                        Titles:@[@"动态", @"行程", @"发现", @"我的"]
                                                                                         Images:@[FDImageWithName(@"Tab_Feeds"),
                                                                                                  FDImageWithName(@"Tab_Day"),
                                                                                                  FDImageWithName(@"Tab_Find"),
-//                                                                                                 FDImageWithName(@"Tab_Follow"),
                                                                                                  FDImageWithName(@"Tab_Me")]
                                                                                 SelectedImages:@[FDImageWithName(@"Tab_Feeds_Selected"),
                                                                                                  FDImageWithName(@"Tab_Day_Selected"),
                                                                                                  FDImageWithName(@"Tab_Find_Selected"),
-//                                                                                                 FDImageWithName(@"Tab_Follow_Selected"),
                                                                                                  FDImageWithName(@"Tab_Me_Selected")]];
     tabBarController.tabBar.alpha = 0.95;
     

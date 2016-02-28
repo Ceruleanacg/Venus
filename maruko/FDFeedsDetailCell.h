@@ -22,6 +22,6 @@
 
 @property (nonatomic, strong) UIView *secondLine;
 
-- (instancetype)initWithFeed:(FDFeed *)feed;
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier feed:(FDFeed *)feed;
 
 @end

@@ -13,8 +13,8 @@
     NSMutableArray *_images;
 }
 
-- (instancetype)initWithFeed:(FDFeed *)feed {
-    if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil]) {
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier feed:(FDFeed *)feed {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.line.hidden = YES;
         self.selectionStyle = UITableViewCellSelectionStyleNone;

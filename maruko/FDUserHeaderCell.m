@@ -13,6 +13,9 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
+        self.line.hidden = YES;
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         _avatarIcon = [UIImageView new];
         _avatarIcon.layer.cornerRadius = 40;
         _avatarIcon.clipsToBounds = YES;
@@ -70,6 +73,22 @@
         }];
     }
     return self;
+}
+
+- (void)bindWithModel:(FDBaseModel *)model {
+    if (![model isKindOfClass:[FDUser class]]) {
+        return;
+    }
+    
+    FDUser *user = (FDUser *)model;
+    
+    [_avatarIcon sd_setImageWithURL:[NSURL URLWithString:user.avatarURL] placeholderImage:FDImageWithName(@"Star_Avatar_Placeholder")];
+    
+    _nameLabel.text = user.nickname;
+    
+    _leftLabel.text = [NSString stringWithFormat:@"%ld 收藏", user.favoCount];
+    
+    _rightLabel.text = [NSString stringWithFormat:@"%ld 关注", user.followCount];
 }
 
 @end

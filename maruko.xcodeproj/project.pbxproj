@@ -445,6 +445,7 @@
 				EFFC29CA1C7B0707004D590C /* Helper */,
 				EFFC29B01C7ADD18004D590C /* WebService */,
 				EFFC29A51C7A068A004D590C /* App */,
+				EFFC299A1C7A037F004D590C /* Model */,
 				EFFC29991C7A0368004D590C /* Base */,
 			);
 			name = Class;
@@ -468,7 +469,6 @@
 				EFFC299E1C7A03F9004D590C /* View */,
 				EFFC299D1C7A03EA004D590C /* ViewModel */,
 				EFFC299C1C7A03E1004D590C /* Controller */,
-				EFFC299A1C7A037F004D590C /* Model */,
 			);
 			name = Base;
 			sourceTree = "<group>";

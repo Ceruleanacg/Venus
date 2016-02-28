@@ -7,6 +7,7 @@
 //
 
 #import "FDBaseCell.h"
+#import "FDUser.h"
 
 @interface FDUserHeaderCell : FDBaseCell
 

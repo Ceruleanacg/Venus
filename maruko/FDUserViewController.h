@@ -7,6 +7,8 @@
 //
 
 #import "FDBaseTableViewController.h"
+#import "FDAccountService.h"
+#import "FDUserViewModel.h"
 
 @interface FDUserViewController : FDBaseTableViewController
 

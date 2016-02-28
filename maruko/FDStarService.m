@@ -11,7 +11,7 @@
 @implementation FDStarService
 
 + (void)postCommentWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
-    [FDWebService commonRequestWithAPI:@"star/news/comment" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+    [FDWebService requestWithAPI:@"star/news/comment" Method:@"POST" Parms:parms HUD:YES Block:^(BOOL success, NSDictionary *resultDic) {
         if (callback) {
             callback(success);
         }

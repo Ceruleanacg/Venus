@@ -18,7 +18,9 @@
              @"avatarURL"   : @"avatar_url",
              @"sex"         : @"sex",
              @"age"         : @"age",
-             };
+             @"favoCount"   : @"favo_count",
+             @"followCount" : @"follow_count"
+            };
 }
 
 @end

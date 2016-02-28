@@ -17,7 +17,7 @@
 
 
 + (void)loginWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
-    [FDWebService commonRequestWithAPI:@"account/login" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+    [FDWebService requestWithAPI:@"account/login" Method:@"POST" Parms:parms HUD:YES Block:^(BOOL success, NSDictionary *resultDic) {
         
         if (success) {
             [[FDNetworkEngine sharedEngine] setToken:resultDic[kTokenKey]];
@@ -30,7 +30,7 @@
 }
 
 + (void)registerWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
-    [FDWebService commonRequestWithAPI:@"account/register" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+    [FDWebService requestWithAPI:@"account/register" Method:@"POST" Parms:parms HUD:YES Block:^(BOOL success, NSDictionary *resultDic) {
         
         if (success) {
             [[FDNetworkEngine sharedEngine] setToken:resultDic[kTokenKey]];
@@ -43,7 +43,7 @@
 }
 
 + (void)getSMSCodeWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
-    [FDWebService commonRequestWithAPI:@"account/smscode" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+    [FDWebService requestWithAPI:@"account/smscode" Method:@"POST" Parms:parms HUD:YES Block:^(BOOL success, NSDictionary *resultDic) {
         if (callback) {
             callback(success);
         }
@@ -51,9 +51,25 @@
 }
 
 + (void)forgetPasswordWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback {
-    [FDWebService commonRequestWithAPI:@"account/forget" Method:@"POST" Parms:parms Block:^(BOOL success, NSDictionary *resultDic) {
+    [FDWebService requestWithAPI:@"account/forget" Method:@"POST" Parms:parms HUD:YES Block:^(BOOL success, NSDictionary *resultDic) {
         if (callback) {
             callback(success);
+        }
+    }];
+}
+
++ (void)getUserInfoWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success, FDUser *user))callback {
+    [FDWebService requestWithAPI:@"account/info" Method:@"GET" Parms:parms HUD:NO Block:^(BOOL success, NSDictionary *resultDic) {
+        
+        FDUser *user = nil;
+        
+        if (success) {
+            NSError *error;
+            user = [MTLJSONAdapter modelOfClass:[FDUser class] fromJSONDictionary:resultDic error:&error];
+        }
+        
+        if (callback) {
+            callback(success, user);
         }
     }];
 }

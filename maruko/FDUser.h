@@ -25,4 +25,8 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, assign) NSInteger age;
 
+@property (nonatomic, assign) NSInteger favoCount;
+
+@property (nonatomic, assign) NSInteger followCount;
+
 @end

@@ -13,9 +13,6 @@
 
 @interface FDWebService : NSObject
 
-+ (void)commonRequestWithAPI:(NSString *)api
-                      Method:(NSString *)method
-                       Parms:(NSDictionary *)parms
-                       Block:(void (^)(BOOL success, NSDictionary *resultDic))block;
++ (void)requestWithAPI:(NSString *)api Method:(NSString *)method Parms:(NSDictionary *)parms HUD:(BOOL)hud Block:(void (^)(BOOL, NSDictionary *))block;
 
 @end

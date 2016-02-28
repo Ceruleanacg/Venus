@@ -7,6 +7,7 @@
 //
 
 #import "FDWebService.h"
+#import "FDUser.h"
 
 @interface FDAccountService : FDWebService
 
@@ -19,5 +20,7 @@
 + (void)getSMSCodeWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback;
 
 + (void)forgetPasswordWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success))callback;
+
++ (void)getUserInfoWithParms:(NSDictionary *)parms Callback:(void (^)(BOOL success, FDUser *user))callback;
 
 @end

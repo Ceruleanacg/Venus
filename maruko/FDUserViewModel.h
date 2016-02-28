@@ -11,4 +11,6 @@
 
 @interface FDUserViewModel : FDBaseViewModel
 
+@property (nonatomic ,strong) FDUser *user;
+
 @end

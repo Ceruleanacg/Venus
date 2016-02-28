@@ -10,27 +10,31 @@
 
 @implementation FDWebService
 
-+ (void)commonRequestWithAPI:(NSString *)api Method:(NSString *)method Parms:(NSDictionary *)parms Block:(void (^)(BOOL, NSDictionary *))block {
++ (void)requestWithAPI:(NSString *)api Method:(NSString *)method Parms:(NSDictionary *)parms HUD:(BOOL)hud Block:(void (^)(BOOL, NSDictionary *))block {
     
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeClear];
+    if (hud) {
+        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeClear];
+    }
     
     [[FDNetworkEngine sharedEngine] addSessionTaskWithAPI:api Method:method Parms:[parms copy] Callback:^(NSDictionary *reseponseDic, NSError *error) {
         
-        [FDWebService commonActionWithReseponseDic:reseponseDic Error:error Block:block];
+        [FDWebService actionWithReseponseDic:reseponseDic Error:error HUD:hud Block:block];
         
     }];
 }
 
-+ (void)commonActionWithReseponseDic:(NSDictionary *)reseponseDic Error:(NSError *)error Block:(void (^)(BOOL, NSDictionary *))block {
++ (void)actionWithReseponseDic:(NSDictionary *)reseponseDic Error:(NSError *)error HUD:(BOOL)hud Block:(void (^)(BOOL, NSDictionary *))block {
     
     BOOL isSuccess = error ? NO : YES;
     
     NSString *message = error ? error.domain : reseponseDic[@"msg"];
     
-    if (isSuccess) {
-        [SVProgressHUD showSuccessWithStatus:message];
-    } else {
-        [SVProgressHUD showErrorWithStatus:message];
+    if (hud) {
+        if (isSuccess) {
+            [SVProgressHUD showSuccessWithStatus:message];
+        } else {
+            [SVProgressHUD showErrorWithStatus:message];
+        }
     }
     
     NSDictionary *resultDic = reseponseDic[kResultsKey];

@@ -24,9 +24,11 @@
     if (indexPath.section == 0) {
         
         if (!_feedsDetailCell) {
-            _feedsDetailCell = [[FDFeedsDetailCell alloc] initWithFeed:_feed];
+            _feedsDetailCell = [[FDFeedsDetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil feed:_feed];
             _feedsDetailCell.tableView = tableView;
         }
+        
+        // Feed 在本地，不需要再次Binding
         
         return _feedsDetailCell;
         

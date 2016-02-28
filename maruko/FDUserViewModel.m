@@ -24,8 +24,10 @@
     if (indexPath.section == 0) {
         
         if (!_userHeaderCell) {
-
+            _userHeaderCell = [[FDUserHeaderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         }
+        
+        [_userHeaderCell bindWithModel:_user];
         
         return _userHeaderCell;
         
