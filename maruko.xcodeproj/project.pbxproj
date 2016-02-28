@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EF37E3581C809F19001630E0 /* FDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF37E3571C809F19001630E0 /* FDTextViewController.m */; };
 		EF37E35C1C80A3B8001630E0 /* FDStarService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF37E35B1C80A3B8001630E0 /* FDStarService.m */; };
+		EF37E3621C8184E9001630E0 /* Feeds_Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF37E3601C8184E9001630E0 /* Feeds_Placeholder@2x.png */; };
+		EF37E3631C8184E9001630E0 /* Feeds_Placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF37E3611C8184E9001630E0 /* Feeds_Placeholder@3x.png */; };
 		EF7A91961C7ECE8A009A0407 /* FDFeedsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */; };
 		EF7A91991C7ED103009A0407 /* FDFeedsTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A91981C7ED103009A0407 /* FDFeedsTextCell.m */; };
 		EF7A919C1C7EDA4F009A0407 /* Main_Loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7A919A1C7EDA4F009A0407 /* Main_Loading@2x.png */; };
@@ -102,6 +104,8 @@
 		EF37E3571C809F19001630E0 /* FDTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTextViewController.m; sourceTree = "<group>"; };
 		EF37E35A1C80A3B8001630E0 /* FDStarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStarService.h; sourceTree = "<group>"; };
 		EF37E35B1C80A3B8001630E0 /* FDStarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStarService.m; sourceTree = "<group>"; };
+		EF37E3601C8184E9001630E0 /* Feeds_Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Placeholder@2x.png"; path = "Arts/Feeds_Placeholder@2x.png"; sourceTree = "<group>"; };
+		EF37E3611C8184E9001630E0 /* Feeds_Placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeds_Placeholder@3x.png"; path = "Arts/Feeds_Placeholder@3x.png"; sourceTree = "<group>"; };
 		EF7A91941C7ECE8A009A0407 /* FDFeedsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsViewModel.h; sourceTree = "<group>"; };
 		EF7A91951C7ECE8A009A0407 /* FDFeedsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedsViewModel.m; sourceTree = "<group>"; };
 		EF7A91971C7ED103009A0407 /* FDFeedsTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedsTextCell.h; sourceTree = "<group>"; };
@@ -331,6 +335,8 @@
 		EFAAC6EF1C7D9DAC00369344 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
+				EF37E3601C8184E9001630E0 /* Feeds_Placeholder@2x.png */,
+				EF37E3611C8184E9001630E0 /* Feeds_Placeholder@3x.png */,
 				EFAAC6FA1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@2x.png */,
 				EFAAC6FB1C7DE6EC00369344 /* Feeds_Avatar_Placeholder@3x.png */,
 				EFAAC6F01C7D9DB300369344 /* Feeds_Collect@2x.png */,
@@ -774,7 +780,9 @@
 				EFAAC6DF1C7D8C9F00369344 /* Main_Background@3x.png in Resources */,
 				EF7A919D1C7EDA4F009A0407 /* Main_Loading@3x.png in Resources */,
 				EFFC2A2D1C7C8C64004D590C /* Tab_Day_Selected@3x.png in Resources */,
+				EF37E3631C8184E9001630E0 /* Feeds_Placeholder@3x.png in Resources */,
 				EFFC2A2F1C7C8C64004D590C /* Tab_Follow@3x.png in Resources */,
+				EF37E3621C8184E9001630E0 /* Feeds_Placeholder@2x.png in Resources */,
 				EFAAC6F31C7D9DB300369344 /* Feeds_Collect@3x.png in Resources */,
 				EFFC2A351C7C8C64004D590C /* Tab_Follow_Selected@2x.png in Resources */,
 			);

@@ -28,6 +28,8 @@
         make.right.equalTo(@(-10));
         make.height.equalTo(@(self.view.bounds.size.height / 2));
     }];
+    
+    [_textView becomeFirstResponder];
 }
 
 - (void)finish:(FDBarButtonItem *)item {

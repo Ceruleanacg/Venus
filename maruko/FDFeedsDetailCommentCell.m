@@ -14,14 +14,14 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         _avatarIcon   = [[UIImageView alloc] init];
         _avatarIcon.layer.cornerRadius = 14;
-        _avatarIcon.layer.masksToBounds = YES;
+        _avatarIcon.clipsToBounds = YES;
         
-        _nameLabel    = [UILabel labelWithText:@"" Color:ColorCommentName FontSize:12 Alignment:NSTextAlignmentLeft Light:YES];
+        _nameLabel    = [UILabel labelWithText:@"" Color:ColorCommentName FontSize:14 Alignment:NSTextAlignmentLeft Light:YES];
         
-        _contentLabel = [UILabel labelWithText:@"" Color:ColorCommentContent FontSize:12 Alignment:NSTextAlignmentLeft Light:YES];
+        _contentLabel = [UILabel labelWithText:@"" Color:ColorCommentContent FontSize:14 Alignment:NSTextAlignmentLeft Light:YES];
         _contentLabel.numberOfLines = 0;
         
-        _createDateLabel = [UILabel labelWithText:@"" Color:ColorCommentDate FontSize:10 Alignment:NSTextAlignmentRight Light:YES];
+        _createDateLabel = [UILabel labelWithText:@"" Color:ColorCommentDate FontSize:12 Alignment:NSTextAlignmentRight Light:YES];
         
         [self.contentView addSubview:_avatarIcon];
         [self.contentView addSubview:_nameLabel];
@@ -30,12 +30,12 @@
         
         [_avatarIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.equalTo(@10);
-            make.size.mas_equalTo(CGSizeMake(28, 28));
+            make.size.mas_equalTo(CGSizeMake(30, 30));
         }];
         
         [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_avatarIcon);
-            make.left.equalTo(_avatarIcon.mas_right).offset(10);
+            make.left.equalTo(_avatarIcon.mas_right).offset(5);
         }];
         
         [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {

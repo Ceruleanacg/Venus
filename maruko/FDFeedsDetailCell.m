@@ -10,7 +10,7 @@
 #import "FDImageViewerController.h"
 
 @implementation FDFeedsDetailCell {
-
+    NSMutableArray *_images;
 }
 
 - (instancetype)initWithFeed:(FDFeed *)feed {
@@ -41,13 +41,14 @@
         }
         
         _secondLine = [UIView new];
-        _secondLine.backgroundColor = ColorFeedLine;
+        _secondLine.backgroundColor = ColorTableSection;
         
         _imageViews = [NSMutableArray new];
+        _images = [NSMutableArray new];
         
         for (NSString *imageURL in feed.imageURLs) {
             
-            UIImageView *imageView = [UIImageView new];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:FDImageWithName(@"Feeds_Placeholder")];
             imageView.contentMode = UIViewContentModeScaleAspectFill;
             imageView.clipsToBounds = YES;
             imageView.layer.cornerRadius = 5.0;
@@ -56,9 +57,27 @@
                 [FDImageViewerController previewImage:[(UIImageView *)view image]];
             };
             
-            [imageView sd_setImageWithURL:[NSURL URLWithString:imageURL] placeholderImage:[UIImage new]];
-            
             [_imageViews addObject:imageView];
+            
+            WeakSelf;
+            
+            [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:imageURL]
+                                                            options:0
+                                                           progress:nil
+                                                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                                                              
+                                                              StrongSelf;
+                                                              
+                                                              [s_self->_images addObject:image];
+                                                              
+                                                              if (s_self->_images.count == feed.imageURLs.count) {
+                                                                  for (NSInteger index = 0; index < feed.imageURLs.count; ++index) {
+                                                                      [s_self.imageViews[index] setImage:s_self->_images[index]];
+                                                                  }
+                                                                  
+                                                                  [s_self.tableView reloadData];
+                                                              }
+            }];
         }
         
         [self.contentView addSubview:_titleLabel];
@@ -100,7 +119,7 @@
                 make.left.equalTo(@10);
                 make.right.equalTo(@(-10));
                 make.top.equalTo(imageView == [_imageViews firstObject] ? spacingView.mas_bottom : previousImageView.mas_bottom).offset(10);
-                make.height.equalTo(@190);
+                make.height.lessThanOrEqualTo(@450);
             }];
             
             previousImageView = imageView;
@@ -111,7 +130,7 @@
         [_secondLine mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(lastImageView ? lastImageView.mas_bottom : spacingView.mas_bottom).offset(10);
             make.left.right.bottom.equalTo(@0);
-            make.height.equalTo(@0.5);
+            make.height.equalTo(@10);
         }];
     }
     return self;

@@ -23,7 +23,7 @@
     
     [self.viewModel fetchModelWithType:FDFetchModeNew Callback:^(NSArray *objects, NSError *error) {
         StrongSelf;
-        [s_self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationLeft];
+        [s_self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
     }];
     
 }
@@ -39,11 +39,18 @@
             return [FDAlert alertWithTitle:@"错误" Message:@"评论不能为空"];
         }
         
+        WeakSelf;
+        
         [FDStarService postCommentWithParms:@{@"news_id" : feed.objectID,
                                               @"content" : content}
                                    Callback:^(BOOL success) {
                                        if (success) {
+                                           
+                                           StrongSelf;
+                                           
                                            [viewController dismissViewControllerAnimated:YES completion:nil];
+                                           
+                                           [s_self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationLeft];
                                        }
                                    }];
     };

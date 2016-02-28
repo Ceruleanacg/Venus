@@ -140,7 +140,7 @@
         
         NSString *targetURL = [feed.imageURLs firstObject];
         
-        [_feedImageView sd_setImageWithURL:[NSURL URLWithString:targetURL] placeholderImage:[UIImage new]];
+        [_feedImageView sd_setImageWithURL:[NSURL URLWithString:targetURL] placeholderImage:FDImageWithName(@"Feeds_Placeholder")];
     }
     
     _infoLabel.text = [NSString stringWithFormat:@"%ld阅读 · %ld评论", feed.readCount, feed.commentCount];

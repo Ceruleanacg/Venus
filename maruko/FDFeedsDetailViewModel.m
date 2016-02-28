@@ -23,8 +23,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         
-        _feedsDetailCell = _feedsDetailCell ? : [[FDFeedsDetailCell alloc] initWithFeed:_feed];
-        _feedsDetailCell.tableView = tableView;
+        if (!_feedsDetailCell) {
+            _feedsDetailCell = [[FDFeedsDetailCell alloc] initWithFeed:_feed];
+            _feedsDetailCell.tableView = tableView;
+        }
         
         return _feedsDetailCell;
         
