@@ -4,9 +4,13 @@
 <dict>
 	<key>MODEL_MAP</key>
 	<dict>
-		<key>star/news/comment</key>
+		<key>account/follow</key>
+		<string>FDStar</string>
+		<key>account/favo</key>
+		<string>FDFeed</string>
+		<key>news/comment</key>
 		<string>FDComment</string>
-		<key>star/news</key>
+		<key>news/feed</key>
 		<string>FDFeed</string>
 	</dict>
 	<key>API_VERSION</key>
