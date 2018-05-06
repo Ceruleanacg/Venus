@@ -1,1 +1,1 @@
-# idolFan - A star news app.
+# Venus - A star news app.
